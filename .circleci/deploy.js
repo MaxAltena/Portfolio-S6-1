@@ -6,7 +6,7 @@ var config = {
 	password: process.env.FTPPASSWORD,
 	host: process.env.FTPHOST,
 	port: 21,
-	localRoot: __dirname + "/../dist",
+	localRoot: __dirname + "/../public/build",
 	remoteRoot: process.env.FTPPATH,
 	include: ["*"],
 	deleteRemote: true
