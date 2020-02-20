@@ -1,0 +1,51 @@
+{
+	"name": "portfolio-s6",
+	"description": "Het portfolio van Max Altena voor Semester 6 van de studie ICT & Media Design op de Fontys.",
+	"keywords": [
+		"portfolio",
+		"s6",
+		"semester 6",
+		"max",
+		"altena",
+		"max altena"
+	],
+	"author": "Max Altena <max@maxaltena.com",
+	"license": "UNLICENSED",
+	"version": "1.0.0",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MaxAltena/Portfolio-S6.git"
+	},
+	"homepage": "https://portfolio.maxaltena.com/S6/",
+	"scripts": {
+		"build": "rollup -c",
+		"dev": "rollup -c -w",
+		"start": "sirv public",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
+		"prettier": "prettier **/*",
+		"prettier:fix": "prettier --write **/*"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^11.0.2",
+		"@rollup/plugin-node-resolve": "^7.1.1",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"eslint-plugin-svelte3": "^2.7.3",
+		"ftp-deploy": "^2.3.6",
+		"husky": "^4.2.3",
+		"lint-staged": "^10.0.7",
+		"prettier": "^1.19.1",
+		"prettier-plugin-svelte": "^0.7.0",
+		"rollup": "^1.31.1",
+		"rollup-plugin-livereload": "^1.0.4",
+		"rollup-plugin-svelte": "^5.1.1",
+		"rollup-plugin-terser": "^5.2.0",
+		"svelte": "^3.18.2"
+	},
+	"dependencies": {
+		"sirv-cli": "^0.4.5"
+	}
+}
