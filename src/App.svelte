@@ -21,15 +21,25 @@
 <style>
 	main {
 		text-align: center;
-		font-family: sans-serif;
 	}
 
 	h1 {
 		font-size: 2rem;
+		margin: 2rem;
+	}
+
+	div {
+		margin: 1rem;
 	}
 
 	button {
 		font-size: 1rem;
+		padding: 0.25rem;
+		margin: 0.5rem;
+	}
+
+	p {
+		margin: 0.5rem;
 	}
 </style>
 
