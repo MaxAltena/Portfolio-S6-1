@@ -4,8 +4,8 @@ const app = new App({
 	target: document.body,
 	props: {
 		title: "Portfolio S6",
-		name: "Max Altena"
-	}
+		name: "Max Altena",
+	},
 });
 
 export default app;
