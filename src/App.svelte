@@ -1,60 +1,31 @@
 <script>
-	import Clock from "./Clock.svelte";
+	import Header from "./sections/Header.svelte";
+	import Main from "./sections/Main.svelte";
+	import TooltipForDarkmode from "./utils/TooltipForDarkmode.svelte";
 
-	let csCurrent = window.appPreferences.colorScheme.current;
-	let rmCurrent = window.appPreferences.reducedMotion.current;
+	let y = 0;
 
-	function handleCSClick() {
-		window.appPreferences.colorScheme.toggle();
-		csCurrent = window.appPreferences.colorScheme.current;
-	}
+	export let data;
 
-	function handleRMClick() {
-		window.appPreferences.reducedMotion.toggle();
-		rmCurrent = window.appPreferences.reducedMotion.current;
-	}
-
-	export let title;
-	export let name;
+	$: document.title = `${data.name} ${data.semester} – ${data.firstName} ${data.lastName}`;
 </script>
 
 <style>
-	main {
-		text-align: center;
-	}
-
-	h1 {
-		font-size: 2rem;
-		margin: 2rem;
-	}
-
-	div {
-		margin: 1rem;
-	}
-
-	button {
-		font-size: 1rem;
-		padding: 0.25rem;
-		margin: 0.5rem;
-	}
-
-	p {
-		margin: 0.5rem;
+	:global(hr) {
+		width: 95%;
+		margin: 16px auto;
+		border-width: 1px;
+		border-style: solid;
+		border-color: var(--on-primary);
+		border-radius: 999px;
+		opacity: 0.25;
+		transition: border-color var(--transition-speed) var(--transition-timing);
 	}
 </style>
 
-<main>
-	<h1>{title} – {name}</h1>
+<svelte:window bind:scrollY={y} />
 
-	<div>
-		<button on:click={handleCSClick}>Toggle theme</button>
-		<p>{csCurrent}</p>
-	</div>
+<TooltipForDarkmode {y} />
 
-	<div>
-		<button on:click={handleRMClick}>Toggle animations</button>
-		<p>{rmCurrent}</p>
-	</div>
-
-	<Clock />
-</main>
+<Header {data} {y} />
+<Main {data} />

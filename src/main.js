@@ -3,8 +3,12 @@ import App from "./App.svelte";
 const app = new App({
 	target: document.body,
 	props: {
-		title: "Portfolio S6",
-		name: "Max Altena",
+		data: {
+			name: "Portfolio",
+			semester: "S6",
+			firstName: "Max",
+			lastName: "Altena",
+		},
 	},
 });
 

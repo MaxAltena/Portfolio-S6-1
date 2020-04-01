@@ -11,7 +11,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Portfolio S6 – Max Altena</title>
-		<meta name="keywords" content="portfolio,s6,semester 6,max,altena,max altena" />
+		<meta name="keywords" content="portfolio,s6,semester 6,max,altena,max altena,maxaltena" />
 		<meta
 			name="description"
 			content="Het portfolio van Max Altena voor Semester 6 van de studie ICT & Media Design op de Fontys."
@@ -19,7 +19,7 @@
 		<meta name="subject" content="Portfolio S6 – Max Altena" />
 		<meta name="copyright" content="Max Altena" />
 		<meta name="language" content="nl" />
-		<meta name="revised" content="Tuesday, February 18, 2020, 9:00 pm" />
+		<meta name="revised" content="Tuesday, April 1, 2020, 9:00 pm" />
 		<meta name="abstract" content="Portfolio Semester 6 van Max Altena" />
 		<meta name="topic" content="Portfolio Semester 6" />
 		<meta
@@ -60,13 +60,27 @@
 		<meta name="msapplication-navbutton-color" content="black" />
 		<meta name="application-name" content="Portfolio S6 – Max Altena" />
 		<meta name="msapplication-tooltip" content="Launch Portfolio S6 – Max Altena" />
-		<link rel="shortcut icon" href="https://stofloos.nl/favicon.ico" />
-		<link rel="apple-touch-icon" href="https://stofloos.nl/favicon.ico" />
-		<link rel="apple-touch-startup-image" href="https://stofloos.nl/favicon.ico" />
+		<link
+			rel="shortcut icon"
+			href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/keycap-digit-six_36-fe0f-20e3.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/keycap-digit-six_36-fe0f-20e3.png"
+		/>
+		<link
+			rel="apple-touch-startup-image"
+			href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/keycap-digit-six_36-fe0f-20e3.png"
+		/>
 
 		<link rel="stylesheet" href="https://static.maxaltena.com/css/dist/global.min.css" />
 		<link rel="stylesheet" href="https://static.maxaltena.com/css/dist/variables.min.css" />
 		<link rel="stylesheet" href="build/bundle.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800|Merriweather:400,400i,700,900i&display=swap"
+			rel="stylesheet"
+		/>
 
 		<script defer src="https://static.maxaltena.com/js/dist/app-preferences.min.js"></script>
 		<script defer src="build/bundle.js"></script>
@@ -80,6 +94,92 @@
 			gtag("js", new Date());
 			gtag("config", "UA-102319824-8");
 		</script>
+
+		<style>
+			:root {
+				--transition-speed: 200ms;
+				--light-on-primary: #121212;
+
+				--light-accent: #f38c00;
+				--light-on-accent: #ffffff;
+				--dark-accent: #0c73ff;
+				--dark-on-accent: #ffffff;
+
+				--accent: var(--light-accent);
+				--on-accent: var(--light-on-accent);
+			}
+
+			html {
+				scroll-behavior: smooth;
+				overflow-x: hidden;
+			}
+
+			@media (prefers-color-scheme: light) {
+				:root {
+					--accent: var(--light-accent);
+					--on-accent: var(--light-on-accent);
+				}
+			}
+
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--accent: var(--dark-accent);
+					--on-accent: var(--dark-on-accent);
+				}
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				:root {
+					--transition-speed: 0ms;
+				}
+
+				html {
+					scroll-behavior: auto;
+				}
+			}
+
+			[data-color-scheme="light"] {
+				--accent: var(--light-accent);
+				--on-accent: var(--light-on-accent);
+			}
+
+			[data-color-scheme="dark"] {
+				--accent: var(--dark-accent);
+				--on-accent: var(--dark-on-accent);
+			}
+
+			[data-reduced-motion="reduce"] {
+				--transition-speed: 0ms;
+			}
+
+			html[data-reduced-motion="reduce"] {
+				scroll-behavior: auto;
+			}
+
+			* {
+				font-family: "Merriweather", "Merriweather Sans", Georgia, Arial, "Times New Roman", Helvetica, Times,
+					sans-serif, serif;
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			.container {
+				margin: 0 auto;
+				max-width: 1280px;
+				width: 90%;
+			}
+			@media only screen and (min-width: 601px) {
+				.container {
+					width: 85%;
+				}
+			}
+			@media only screen and (min-width: 993px) {
+				.container {
+					width: 70%;
+				}
+			}
+		</style>
 	</head>
 
 	<body></body>
