@@ -10,7 +10,7 @@
 	p {
 		color: var(--accent);
 		transition: all var(--transition-speed) var(--transition-timing);
-		margin: 0.25rem 0;
+		margin: 0.4rem 0;
 	}
 
 	@media only screen and (max-width: 450px){
