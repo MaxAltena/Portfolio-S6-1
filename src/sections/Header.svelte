@@ -103,7 +103,7 @@
 	small.scrolledShow {
 		z-index: 1;
 		width: 80px;
-		top: 27px;
+		top: 31px;
 		left: 134px;
 	}
 
