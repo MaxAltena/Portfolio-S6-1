@@ -21,8 +21,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: color var(--transition-speed) var(--transition-timing);
+		transition: color var(--transition-speed) var(--transition-timing), box-shadow var(--transition-speed) var(--transition-timing);
 		z-index: 10;
+	}
+
+	header.scrolled {
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 	}
 
 	.before {
@@ -47,8 +51,7 @@
 		left: 0;
 		right: 0;
 		background: var(--primary);
-		border: 4px solid var(--accent);
-		transition: background var(--transition-speed) var(--transition-timing), border var(--transition-speed) var(--transition-timing), height var(--transition-speed) var(--transition-timing);
+		transition: background var(--transition-speed) var(--transition-timing), height var(--transition-speed) var(--transition-timing);
 		overflow: hidden;
 	}
 
@@ -76,7 +79,7 @@
 		top: 19px;
 		margin: auto;
 		font-size: 22px;
-		width: 133px;
+		width: 140px;
 		font-weight: 800;
 		color: var(--on-primary);
 		transition: color var(--transition-speed) var(--transition-timing);
