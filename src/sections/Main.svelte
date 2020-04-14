@@ -3,13 +3,15 @@
 </script>
 
 <main class="container">
-	<h1>
-		<a href="#top" name="top">.</a>
-		{data.name} {data.semester}
-	</h1>
-	<small>{data.firstName} {data.lastName}</small>
+	<div class="small-medium-only" role="presentation">
+		<h1>
+			<a href="#top" name="top">.</a>
+			{data.name} {data.semester}
+		</h1>
+		<small>{data.firstName} {data.lastName}</small>
 
-	<hr />
+		<hr />
+	</div>
 
 	<h2>
 		<a href="#leeswijzer" name="leeswijzer">.</a>
@@ -61,9 +63,18 @@
 		align-items: baseline;
 	}
 
+	.small-medium-only {
+		display: none;
+		width: 100%;
+	}
+
 	h1,
 	h2 {
 		position: relative;
+	}
+
+	h2 {
+		margin-bottom: 10px;
 	}
 
 	a[name] {
@@ -71,10 +82,6 @@
 		top: -100px;
 		opacity: 0;
 		pointer-events: none;
-	}
-
-	small {
-		margin-top: 10px;
 	}
 
 	p {
@@ -85,6 +92,12 @@
 	@media only screen and (max-width: 450px) {
 		main {
 			padding-top: 200px;
+		}
+	}
+
+	@media only screen and (max-width: 770px) {
+		.small-medium-only {
+			display: block;
 		}
 	}
 </style>
