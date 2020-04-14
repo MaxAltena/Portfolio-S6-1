@@ -7,9 +7,9 @@ const app = new App({
 			name: "Portfolio",
 			semester: "S6",
 			firstName: "Max",
-			lastName: "Altena",
-		},
-	},
+			lastName: "Altena"
+		}
+	}
 });
 
 export default app;

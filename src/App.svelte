@@ -1,3 +1,21 @@
+<script>
+	import Header from "./sections/Header.svelte";
+	import Main from "./sections/Main.svelte";
+	import TooltipForDarkmode from "./utils/TooltipForDarkmode.svelte";
+
+	let y = 0;
+
+	export let data;
+
+	$: document.title = `${data.name} ${data.semester} – ${data.firstName} ${data.lastName}`;
+</script>
+
+<svelte:window bind:scrollY="{y}" />
+
+<TooltipForDarkmode {y} />
+<Header {data} {y} />
+<Main {data} />
+
 <style>
 	:global(hr) {
 		width: 95%;
@@ -39,21 +57,3 @@
 		color: var(--primary);
 	}
 </style>
-
-<script>
-	import Header from "./sections/Header.svelte";
-	import Main from "./sections/Main.svelte";
-	import TooltipForDarkmode from "./utils/TooltipForDarkmode.svelte";
-
-	let y = 0;
-
-	export let data;
-
-	$: document.title = `${data.name} ${data.semester} – ${data.firstName} ${data.lastName}`;
-</script>
-
-<svelte:window bind:scrollY={y} />
-
-<TooltipForDarkmode {y} />
-<Header {data} {y} />
-<Main {data} />

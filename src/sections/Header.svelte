@@ -1,16 +1,42 @@
 <script>
-	export let data
-	export let y
+	export let data;
+	export let y;
 
-	let title = data.name + " " + data.semester
+	let title = data.name + " " + data.semester;
 
 	$: csCurrent = window.appPreferences.colorScheme.current;
 
-	const changeColorScheme = ()=>{
+	const changeColorScheme = () => {
 		window.appPreferences.colorScheme.toggle();
 		csCurrent = window.appPreferences.colorScheme.current;
-	}
+	};
 </script>
+
+<header class:scrolled="{y !== 0}">
+	<div class="before" role="presentation"></div>
+	<div class="container" role="presentation">
+		<div class="logo" role="presentation">
+			<a href="#top" on:click="{() => window.scrollTo(0, 0)}" class="title">{title}</a>
+			<small class="scrolledHide">{data.firstName} {data.lastName}</small>
+		</div>
+
+		<nav>
+			<a href="#leeswijzer">Leeswijzer</a>
+			<a href="#opdracht">Opdracht</a>
+			<a href="#producten">Producten</a>
+			<a href="#reflectie">Reflectie</a>
+
+			<div on:click="{changeColorScheme}" class="iconContainer" role="presentation">
+				<i class="gg-dark-mode"></i>
+			</div>
+		</nav>
+	</div>
+	<div class="after" role="presentation">
+		<div class="container" role="presentation">
+			<small class="scrolledShow">– {data.firstName} {data.lastName}</small>
+		</div>
+	</div>
+</header>
 
 <style>
 	header {
@@ -21,15 +47,15 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: color var(--transition-speed) var(--transition-timing), box-shadow var(--transition-speed) var(--transition-timing);
+		transition: color var(--transition-speed) var(--transition-timing),
+			box-shadow var(--transition-speed) var(--transition-timing);
 		z-index: 10;
 		box-shadow: none;
 	}
 
-	 header.scrolled {
+	header.scrolled {
 		box-shadow: var(--header-box-shadow);
 	}
-
 
 	.before {
 		content: "";
@@ -53,7 +79,8 @@
 		left: 0;
 		right: 0;
 		background: var(--primary);
-		transition: background var(--transition-speed) var(--transition-timing), height var(--transition-speed) var(--transition-timing);
+		transition: background var(--transition-speed) var(--transition-timing),
+			height var(--transition-speed) var(--transition-timing);
 		overflow: hidden;
 	}
 
@@ -160,41 +187,41 @@
 		box-sizing: border-box;
 		position: relative;
 		display: block;
-		transform: scale(var(--ggs,1));
-		border:2px solid;
-		border-radius:100px;
-		width:20px;
-		height:20px
+		transform: scale(var(--ggs, 1));
+		border: 2px solid;
+		border-radius: 100px;
+		width: 20px;
+		height: 20px;
 	}
 	.gg-dark-mode::after,
 	.gg-dark-mode::before {
 		content: "";
 		box-sizing: border-box;
 		position: absolute;
-		display: block
+		display: block;
 	}
 	.gg-dark-mode::before {
-		border:5px solid;
-		border-top-left-radius:100px;
-		border-bottom-left-radius:100px;
+		border: 5px solid;
+		border-top-left-radius: 100px;
+		border-bottom-left-radius: 100px;
 		border-right: 0;
-		width:9px;
-		height:18px;
-		top:-1px;
-		left:-1px
+		width: 9px;
+		height: 18px;
+		top: -1px;
+		left: -1px;
 	}
 	.gg-dark-mode::after {
-		border:4px solid;
-		border-top-right-radius:100px;
-		border-bottom-right-radius:100px;
+		border: 4px solid;
+		border-top-right-radius: 100px;
+		border-bottom-right-radius: 100px;
 		border-left: 0;
-		width:4px;
-		height:8px;
-		right:4px;
-		top:4px
+		width: 4px;
+		height: 8px;
+		right: 4px;
+		top: 4px;
 	}
 
-	@media only screen and (max-width: 770px){
+	@media only screen and (max-width: 770px) {
 		.logo {
 			display: none;
 		}
@@ -205,13 +232,10 @@
 
 		div.container {
 			justify-content: center;
-
 		}
-
-
 	}
 
-	@media only screen and (max-width: 450px){
+	@media only screen and (max-width: 450px) {
 		header {
 			height: 200px;
 		}
@@ -230,29 +254,3 @@
 		}
 	}
 </style>
-
-<header class:scrolled={y != 0}>
-	<div class="before" role="presentation"></div>
-	<div class="container" role="presentation">
-		<div class="logo" role="presentation">
-			<a href="#top" on:click={() => window.scrollTo(0, 0)} class="title">{title}</a>
-			<small class="scrolledHide">{data.firstName} {data.lastName}</small>
-		</div>
-
-		<nav>
-			<a href="#leeswijzer">Leeswijzer</a>
-			<a href="#opdracht">Opdracht</a>
-			<a href="#proces">Proces</a>
-			<a href="#reflectie">Reflectie</a>
-
-			<div on:click={changeColorScheme} class="iconContainer" role="presentation">
-				<i class="gg-dark-mode"></i>
-			</div>
-		</nav>
-	</div>
-	<div class="after" role="presentation">
-		<div class="container" role="presentation">
-			<small class="scrolledShow">– {data.firstName} {data.lastName}</small>
-		</div>
-	</div>
-</header>
