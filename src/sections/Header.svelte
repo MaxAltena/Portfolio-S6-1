@@ -23,11 +23,13 @@
 		align-items: center;
 		transition: color var(--transition-speed) var(--transition-timing), box-shadow var(--transition-speed) var(--transition-timing);
 		z-index: 10;
+		box-shadow: none;
 	}
 
-	header.scrolled {
-		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	 header.scrolled {
+		box-shadow: var(--header-box-shadow);
 	}
+
 
 	.before {
 		content: "";
@@ -116,12 +118,35 @@
 	nav a {
 		margin-right: 15px;
 		color: var(--on-primary);
-		transition: color var(--transition-speed) var(--transition-timing);
+		transition: color calc(var(--transition-speed) / 2) var(--transition-timing);
+		text-decoration: none;
+
+		padding: 4px;
+		position: relative;
+	}
+
+	nav a::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 4px;
+		border-radius: 4px;
+		background: var(--accent);
+		z-index: -1;
+		transition: height calc(var(--transition-speed) / 2) var(--transition-timing);
+	}
+
+	nav a:hover::after,
+	nav a:active::after {
+		height: 100%;
 	}
 
 	nav a:hover,
 	nav a:active {
-		color: var(--accent);
+		color: var(--primary);
 	}
 
 	.iconContainer {
@@ -206,10 +231,10 @@
 	}
 </style>
 
-<header class:scrolled={y !== 0}>
-	<div class="before"></div>
-	<div class="container">
-		<div class="logo">
+<header class:scrolled={y != 0}>
+	<div class="before" role="presentation"></div>
+	<div class="container" role="presentation">
+		<div class="logo" role="presentation">
 			<a href="#top" on:click={() => window.scrollTo(0, 0)} class="title">{title}</a>
 			<small class="scrolledHide">{data.firstName} {data.lastName}</small>
 		</div>
@@ -217,16 +242,16 @@
 		<nav>
 			<a href="#leeswijzer">Leeswijzer</a>
 			<a href="#opdracht">Opdracht</a>
-			<a href="#producten">Producten</a>
+			<a href="#proces">Proces</a>
 			<a href="#reflectie">Reflectie</a>
 
-			<div on:click={changeColorScheme} class="iconContainer">
+			<div on:click={changeColorScheme} class="iconContainer" role="presentation">
 				<i class="gg-dark-mode"></i>
 			</div>
 		</nav>
 	</div>
-	<div class="after">
-		<div class="container">
+	<div class="after" role="presentation">
+		<div class="container" role="presentation">
 			<small class="scrolledShow">– {data.firstName} {data.lastName}</small>
 		</div>
 	</div>

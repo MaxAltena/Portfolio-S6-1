@@ -82,7 +82,7 @@
 	}
 </style>
 
-{#if y === 0}
+{#if y == 0}
 	<div
 		transition:fly={{ y: -50, duration: 200 }}
 		use:pannable

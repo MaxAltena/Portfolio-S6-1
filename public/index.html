@@ -102,11 +102,15 @@
 
 				--light-accent: #f38c00;
 				--light-on-accent: #ffffff;
-				--dark-accent: #0c73ff;
+				--dark-accent: #008af3;
 				--dark-on-accent: #ffffff;
 
 				--accent: var(--light-accent);
 				--on-accent: var(--light-on-accent);
+
+				--light-header-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+				--dark-header-box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.1),
+					0 10px 10px -5px rgba(255, 255, 255, 0.04);
 			}
 
 			html {
@@ -118,6 +122,7 @@
 				:root {
 					--accent: var(--light-accent);
 					--on-accent: var(--light-on-accent);
+					--header-box-shadow: var(--light-header-box-shadow);
 				}
 			}
 
@@ -125,6 +130,7 @@
 				:root {
 					--accent: var(--dark-accent);
 					--on-accent: var(--dark-on-accent);
+					--header-box-shadow: var(--dark-header-box-shadow);
 				}
 			}
 
@@ -141,11 +147,13 @@
 			[data-color-scheme="light"] {
 				--accent: var(--light-accent);
 				--on-accent: var(--light-on-accent);
+				--header-box-shadow: var(--light-header-box-shadow);
 			}
 
 			[data-color-scheme="dark"] {
 				--accent: var(--dark-accent);
 				--on-accent: var(--dark-on-accent);
+				--header-box-shadow: var(--dark-header-box-shadow);
 			}
 
 			[data-reduced-motion="reduce"] {
@@ -178,6 +186,12 @@
 				.container {
 					width: 70%;
 				}
+			}
+
+			p {
+				line-height: 1.85;
+				font-weight: normal;
+				margin: 0.5rem 0;
 			}
 		</style>
 	</head>

@@ -3,4 +3,6 @@ node_modules
 .gitignore
 .prettierignore
 .editorconfig
+.htaccess
 build
+public/build
