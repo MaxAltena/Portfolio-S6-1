@@ -6,21 +6,22 @@ on:
 
 jobs:
     deploy:
-        name: Build
+        name: Deploy
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout Repo
+            - name: Checkout repo
               uses: actions/checkout@master
               with:
                   fetch-depth: 2
-            - name: Install Dependencies
+            - name: Install dependencies
               run: npm install
-            - name: Build
+            - name: Build project
               run: npm run build
-            - name: FTP Deploy
+            - name: Deploy build
               uses: SamKirkland/FTP-Deploy-Action@3.0.0
               with:
                   ftp-server: ${{ secrets.FTP_SERVER }}${{ secrets.FTP_PATH }}
                   ftp-username: ${{ secrets.FTP_USERNAME }}
                   ftp-password: ${{ secrets.FTP_PASSWORD }}
                   local-dir: public/
+                  git-ftp-args: --all
