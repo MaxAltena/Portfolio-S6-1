@@ -2,8 +2,9 @@
 	import { fly } from "svelte/transition";
 	import { spring } from "svelte/motion";
 	import { pannable } from "../js/pannable.js";
+	import { scrollY } from "./stores";
 
-	$: coords = spring(
+	let coords = spring(
 		{ x: 0, y: 0 },
 		{
 			stiffness: 0.2,
@@ -27,19 +28,17 @@
 		coords.damping = 0.4;
 		coords.set({ x: 0, y: 0 });
 	};
-
-	export let y;
 </script>
 
-{#if y === 0}
+{#if $scrollY === 0}
 	<div
 		transition:fly="{{ y: -50, duration: 200 }}"
 		use:pannable
 		on:panstart="{handlePanStart}"
 		on:panmove="{handlePanMove}"
 		on:panend="{handlePanEnd}"
-		style="transform: translate({coords.x}px,{coords.y}px) rotate({coords.x * 0.2}deg)"
-		class:scrolled="{y !== 0}"
+		style="transform: translate({$coords.x}px,{$coords.y}px) rotate({$coords.x * 0.2}deg)"
+		class:scrolled="{$scrollY !== 0}"
 	>
 		<svg
 			version="1.1"
@@ -84,6 +83,13 @@
 	p {
 		transform: rotate(10deg) translateY(-20px);
 		opacity: 0.75;
+		user-select: none;
+		-webkit-user-drag: none;
+		transition: opacity calc(var(--transition-speed) * 0.25) var(--transition-timing);
+	}
+
+	div:active > p {
+		opacity: 1;
 	}
 
 	@media only screen and (min-width: 993px) {

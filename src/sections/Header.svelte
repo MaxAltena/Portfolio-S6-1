@@ -1,9 +1,9 @@
 <script>
-	export let data;
-	export let y;
+	import { fade } from "svelte/transition";
+	import { link } from "svelte-routing";
+	import { scrollY, name, semester, fullName } from "../utils/stores";
 
-	let title = data.name + " " + data.semester;
-
+	$: title = `${$name} ${$semester}`;
 	$: csCurrent = window.appPreferences.colorScheme.current;
 
 	const changeColorScheme = () => {
@@ -12,16 +12,16 @@
 	};
 </script>
 
-<header class:scrolled="{y !== 0}">
+<header class:scrolled="{$scrollY !== 0}" out:fade="{{ duration: 300 }}">
 	<div class="before" role="presentation"></div>
 	<div class="container" role="presentation">
 		<div class="logo" role="presentation">
 			<a href="#top" on:click="{() => window.scrollTo(0, 0)}" class="title">{title}</a>
-			<small class="scrolledHide">{data.firstName} {data.lastName}</small>
+			<small class="scrolledHide">{$fullName}</small>
 		</div>
 
 		<nav>
-			<a href="#leeswijzer">Leeswijzer</a>
+			<a href="leeswijzer" use:link>Leeswijzer</a>
 			<a href="#opdracht">Opdracht</a>
 			<a href="#producten">Producten</a>
 			<a href="#reflectie">Reflectie</a>
@@ -33,7 +33,7 @@
 	</div>
 	<div class="after" role="presentation">
 		<div class="container" role="presentation">
-			<small class="scrolledShow">– {data.firstName} {data.lastName}</small>
+			<small class="scrolledShow">– {$fullName}</small>
 		</div>
 	</div>
 </header>
@@ -101,7 +101,6 @@
 	}
 
 	a.title {
-		cursor: pointer;
 		position: absolute;
 		display: block;
 		left: 0;
@@ -177,10 +176,10 @@
 	}
 
 	.iconContainer {
-		cursor: pointer;
 		height: auto;
 		width: auto;
 		padding: 4px;
+		cursor: pointer;
 	}
 
 	.gg-dark-mode {
