@@ -1,5 +1,7 @@
 {
 	"name": "portfolio-s6",
+	"version": "1.0.0",
+	"private": true,
 	"description": "Het portfolio van Max Altena voor Semester 6 van de studie ICT & Media Design op de Fontys.",
 	"keywords": [
 		"max",
@@ -9,27 +11,50 @@
 		"s6",
 		"semester 6"
 	],
-	"author": "Max Altena <max@maxaltena.com>",
-	"contributors": [
-		"Max Altena <max@maxaltena.com>"
-	],
-	"license": "UNLICENSED",
-	"version": "1.0.0",
-	"private": true,
+	"homepage": "https://portfolio.maxaltena.com/S6/",
+	"bugs": "https://github.com/MaxAltena/Portfolio-S6/issues",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/MaxAltena/Portfolio-S6.git"
 	},
-	"bugs": "https://github.com/MaxAltena/Portfolio-S6/issues",
-	"homepage": "https://portfolio.maxaltena.com/S6/",
+	"license": "UNLICENSED",
+	"author": "Max Altena <max@maxaltena.com> (https://maxaltena.com/)",
+	"contributors": [
+		"Max Altena <max@maxaltena.com>"
+	],
 	"scripts": {
 		"build": "rollup -c",
 		"dev": "rollup -c -w",
-		"start": "sirv public",
 		"eslint": "eslint .",
-		"eslint:fix": "eslint --fix .",
+		"eslint:fix": "eslint . --fix",
 		"prettier": "prettier **/*",
-		"prettier:fix": "prettier --write **/*"
+		"prettier:fix": "prettier **/* --write",
+		"start": "sirv public"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*": "npm run prettier:fix",
+		"*.js": [
+			"npm run prettier:fix",
+			"npm run eslint:fix"
+		],
+		"*.svelte": [
+			"npm run prettier:fix",
+			"npm run eslint:fix"
+		]
+	},
+	"browserslist": [
+		"last 1 version",
+		"> 1%",
+		"maintained node versions",
+		"not dead"
+	],
+	"dependencies": {
+		"svelte-routing": "^1.4.2"
 	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^11.1.0",
@@ -51,34 +76,9 @@
 		"sirv-cli": "^0.4.5",
 		"svelte": "^3.20.1"
 	},
-	"browserslist": [
-		"last 1 version",
-		"> 1%",
-		"maintained node versions",
-		"not dead"
-	],
 	"engines": {
 		"node": ">= 8.17.0",
 		"npm": ">= 6.12.1",
 		"yarn": ">= 1.19.1"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"*": "npm run prettier:fix",
-		"*.js": [
-			"npm run prettier:fix",
-			"npm run eslint:fix"
-		],
-		"*.svelte": [
-			"npm run prettier:fix",
-			"npm run eslint:fix"
-		]
-	},
-	"dependencies": {
-		"svelte-routing": "^1.4.2"
 	}
 }

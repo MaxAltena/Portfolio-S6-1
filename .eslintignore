@@ -1,8 +1,19 @@
+# General
 node_modules
 .eslintignore
-.gitignore
 .prettierignore
+.gitignore
 .editorconfig
+.browserslistrc
 .htaccess
-build
+.git-ftp-include
+*.min.*
+*.yml
+*.pdf
+*.otf
+*.jpg
+*.gif
+*.png
+
+# Project specific
 public/build
