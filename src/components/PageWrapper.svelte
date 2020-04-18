@@ -8,12 +8,14 @@
 <main in:fly="{{ y: 100, duration: 300, delay: 150 }}" out:fly="{{ delay: 0, duration: 200, y: 50 }}">
 	<div class="container" role="presentation">
 		<div class="top" role="presentation">
-			<a href="/" use:link>🔙</a>
-			<h1>{title}</h1>
-			<a href="/" use:link>☑️</a>
-		</div>
+			<div class="header" role="presentation">
+				<a href="/S6/" use:link>🔙</a>
+				<h1>{title}</h1>
+				<a href="#top">🔝</a>
+			</div>
 
-		<hr />
+			<hr />
+		</div>
 
 		<slot />
 	</div>
@@ -29,16 +31,41 @@
 	}
 
 	.top {
+		position: sticky;
+		top: 5vh;
+		background: var(--primary);
+		transition: background var(--transition-speed) var(--transition-timing);
+	}
+
+	.top::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: calc(-5vh + 3px);
+		background: var(--primary);
+		transition: background var(--transition-speed) var(--transition-timing);
+		width: 100%;
+		height: 5vh;
+		z-index: -1;
+	}
+
+	.header {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
+	h1 {
+		color: var(--accent);
+		transition: color var(--transition-speed) var(--transition-timing);
+	}
+
 	a {
 		display: inline-block;
 		color: var(--on-primary);
-		transition: color calc(var(--transition-speed) / 2) var(--transition-timing);
+		transition: color var(--transition-speed) var(--transition-timing);
 		text-decoration: none;
 
 		padding: 4px;
@@ -58,7 +85,8 @@
 		border-radius: 4px;
 		background: var(--accent);
 		z-index: -1;
-		transition: height calc(var(--transition-speed) / 2) var(--transition-timing);
+		transition: height var(--transition-speed) var(--transition-timing),
+			background var(--transition-speed) var(--transition-timing);
 	}
 
 	a:hover::after,

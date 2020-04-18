@@ -66,6 +66,8 @@
 
 	h2 {
 		margin-bottom: 10px;
+		color: var(--accent);
+		transition: color var(--transition-speed) var(--transition-timing);
 	}
 
 	a[name] {

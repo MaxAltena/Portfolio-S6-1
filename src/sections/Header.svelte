@@ -21,7 +21,7 @@
 		</div>
 
 		<nav>
-			<a href="leeswijzer" use:link>Leeswijzer</a>
+			<a href="/S6/leeswijzer/" use:link>Leeswijzer</a>
 			<a href="#opdracht">Opdracht</a>
 			<a href="#producten">Producten</a>
 			<a href="#reflectie">Reflectie</a>
@@ -162,7 +162,8 @@
 		border-radius: 4px;
 		background: var(--accent);
 		z-index: -1;
-		transition: height calc(var(--transition-speed) / 2) var(--transition-timing);
+		transition: height calc(var(--transition-speed) / 2) var(--transition-timing),
+			background var(--transition-speed) var(--transition-timing);
 	}
 
 	nav a:hover::after,

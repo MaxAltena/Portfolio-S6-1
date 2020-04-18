@@ -1,6 +1,5 @@
 <script>
 	import { Router, Route } from "svelte-routing";
-	import { spring } from "svelte/motion";
 	import { scrollY, name, semester, fullName, products } from "./utils/stores";
 
 	import PageWrapper from "./components/PageWrapper.svelte";
@@ -16,37 +15,15 @@
 	export let basepath = process.env.isProd ? "/S6" : "/";
 
 	$: document.title = `${$name} ${$semester} – ${$fullName}`;
-
-	let coords = spring(
-		{ x: -50, y: -50 },
-		{
-			stiffness: 0.2,
-			damping: 0.4
-		}
-	);
-
-	let size = spring(30);
 </script>
 
-<svelte:window
-	bind:scrollY="{$scrollY}"
-	on:mousemove="{e => coords.set({ x: e.clientX, y: e.clientY })}"
-	on:mousedown="{() => size.set(40)}"
-	on:mouseup="{() => size.set(30)}"
-/>
-
-<div
-	class="cursor"
-	role="presentation"
-	style="top: {$coords.y - $size / 2}px; left: {$coords.x - $size / 2}px; width: {$size}px; height: {$size}px;
-	border-width: {$size * 0.15}px;"
-></div>
+<svelte:window bind:scrollY="{$scrollY}" />
 
 <div class="accent" role="presentation"></div>
 
 <Router {url} {basepath}>
 	{#each $products as product}
-		<Route path="/{product.link}">
+		<Route path="/{product.link}/">
 			{#if product.type === 'page'}
 				<PageWrapper title="{product.title}">
 					<Page {product} />
@@ -71,6 +48,7 @@
 <style>
 	.accent {
 		position: fixed;
+		z-index: 10000;
 		height: 4px;
 		width: 100%;
 		top: 0;
@@ -78,21 +56,6 @@
 		right: 0;
 		background: var(--accent);
 		transition: background var(--transition-speed) var(--transition-timing);
-	}
-
-	.cursor {
-		border-color: var(--on-primary);
-		border-style: solid;
-		border-radius: 50%;
-		position: fixed;
-		pointer-events: none;
-		z-index: 1000;
-	}
-
-	@media only screen and (max-width: 770px) {
-		.cursor {
-			display: none;
-		}
 	}
 
 	:global(hr) {

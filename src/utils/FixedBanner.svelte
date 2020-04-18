@@ -17,11 +17,14 @@
 		background: var(--primary);
 		border: 3px solid var(--on-primary);
 		color: var(--on-primary);
+		transition: color var(--transition-speed) var(--transition-timing),
+			background var(--transition-speed) var(--transition-timing);
 		padding: 2px 10px;
 		font-size: 15px;
 	}
 
 	a {
 		color: var(--on-primary);
+		transition: color var(--transition-speed) var(--transition-timing);
 	}
 </style>

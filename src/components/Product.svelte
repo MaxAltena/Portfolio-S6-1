@@ -6,7 +6,7 @@
 	export let i;
 </script>
 
-<a use:link in:fade="{{ duration: 400, delay: 150 + i * 100 }}" href="{product.link}">
+<a use:link in:fade="{{ duration: 400, delay: 150 + i * 100 }}" href="/S6/{product.link}/">
 	{product.emoji || '▶'} {product.title}
 </a>
 
@@ -14,7 +14,7 @@
 	a {
 		display: inline-block;
 		color: var(--on-primary);
-		transition: color calc(var(--transition-speed) / 2) var(--transition-timing);
+		transition: color var(--transition-speed) var(--transition-timing);
 		text-decoration: none;
 
 		padding: 4px;
@@ -33,7 +33,8 @@
 		border-radius: 4px;
 		background: var(--accent);
 		z-index: -1;
-		transition: height calc(var(--transition-speed) / 2) var(--transition-timing);
+		transition: height calc(var(--transition-speed) / 2) var(--transition-timing),
+			background var(--transition-speed) var(--transition-timing);
 	}
 
 	a:hover::after,
