@@ -23,7 +23,7 @@
 
 <Router {url} {basepath}>
 	{#each $products as product}
-		<Route path="/{product.link}/">
+		<Route path="{product.link}/">
 			{#if product.type === 'page'}
 				<PageWrapper title="{product.title}">
 					<Page {product} />
