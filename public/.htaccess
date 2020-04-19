@@ -222,7 +222,8 @@ AddDefaultCharset utf-8
 
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^ https://portfolio.maxaltena.com/S6/ [R=301,L]
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteRule ^(.*)$ https://portfolio.maxaltena.com/S6/ [R=301,L]
 </IfModule>
 
 # Redirect socket.io requests
