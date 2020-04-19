@@ -6,7 +6,7 @@
 	export let i;
 </script>
 
-<a use:link in:fade="{{ duration: 400, delay: 150 + i * 100 }}" href="/S6/{product.link}/">
+<a use:link in:fade="{{ duration: 400, delay: 150 + i * 100 }}" href="{product.link}/">
 	{product.emoji || '▶'} {product.title}
 </a>
 

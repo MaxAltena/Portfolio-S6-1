@@ -17,7 +17,7 @@
 		</div>
 
 		<nav>
-			<a href="/S6/leeswijzer/" use:link>Leeswijzer</a>
+			<a href="leeswijzer/" use:link>Leeswijzer</a>
 			<a href="#opdracht">Opdracht</a>
 			<a href="#producten">Producten</a>
 			<a href="#reflectie">Reflectie</a>

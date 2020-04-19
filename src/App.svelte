@@ -12,7 +12,7 @@
 	import FixedBanner from "./utils/FixedBanner.svelte";
 
 	export let url = "";
-	export let basepath = process.env.isProd ? "/S6" : "/";
+	export let basepath = process.env.isProd ? "S6" : "";
 
 	$: document.title = `${$name} ${$semester} – ${$fullName}`;
 </script>
