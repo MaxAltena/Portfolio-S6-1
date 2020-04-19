@@ -48,7 +48,7 @@
 		Producten
 	</h1>
 
-	<p in:fly="{{ ...animation, delay: (delay += 50) }}">Weten hoe de producten tot stand zijn gekomen? <a href="leeswijzer/" use:link>Bekijk dan even de aanpak in de leeswijzer.</a></p>
+	<p in:fly="{{ ...animation, delay: (delay += 50) }}">Weten hoe de producten tot stand zijn gekomen? Bekijk dan even de aanpak in <a href="leeswijzer/" use:link>de leeswijzer</a>.</p>
 
 	<ProductShowcase {animation} {delay} />
 

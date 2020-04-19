@@ -10,11 +10,11 @@
 </script>
 
 <p>
-	Liever de {$docCS === 'dark' ? 'lichte' : 'donkere'} versie van de leeswijzer zien?
+	Liever de {$docCS === 'dark' ? 'lichte' : 'donkere'} versie van de leeswijzer zien? Ja, doe maar de
 	<span role="presentation" on:click="{changedocCS}">
-		Ja, doe maar de {$docCS === 'dark' ? 'lichte' : 'donkere'} versie.
-	</span> Of helemaal geen zin om het hier te zien?
-	<a href="https://drive.google.com/file/d/{id}/view" target="_blank">Open de leeswijzer een nieuwe tab.</a>
+		{$docCS === 'dark' ? 'lichte' : 'donkere'} versie
+	</span>. Of helemaal geen zin om het hier te zien? Open de leeswijzer in een
+	<a href="https://drive.google.com/file/d/{id}/view" target="_blank">nieuwe tab</a>.
 </p>
 
 <iframe
