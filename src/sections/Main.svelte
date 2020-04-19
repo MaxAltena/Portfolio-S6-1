@@ -23,33 +23,31 @@
 		Opdracht
 	</h1>
 
-	<h2 in:fly="{{ ...animation, delay: delay += 100 }}">Opdrachtgever</h2>
+	<h2 in:fly="{{ ...animation, delay: (delay += 100) }}">Opdrachtgever</h2>
 
-	<p in:fly="{{ ...animation, delay: delay += 50 }}">Lorem ipsum</p>
+	<p in:fly="{{ ...animation, delay: (delay += 50) }}">Lorem ipsum</p>
 
-	<h2 in:fly="{{ ...animation, delay: delay += 100 }}">Opdrachtomschrijving</h2>
+	<h2 in:fly="{{ ...animation, delay: (delay += 100) }}">Opdrachtomschrijving</h2>
 
-	<p in:fly="{{ ...animation, delay: delay += 50 }}">Lorem ipsum</p>
+	<p in:fly="{{ ...animation, delay: (delay += 50) }}">Lorem ipsum</p>
 
-	<hr in:fly="{{ ...animation, delay: delay += 100 }}" />
+	<hr in:fly="{{ ...animation, delay: (delay += 100) }}" />
 
-	<h1 in:fly="{{ ...animation, delay: delay += 100 }}">
+	<h1 in:fly="{{ ...animation, delay: (delay += 100) }}">
 		<a href="#producten" name="producten">.</a>
 		Producten
 	</h1>
 
 	<ProductShowcase {animation} {delay} />
 
-	<hr in:fly="{{ ...animation, delay: delay += 100 }}" />
+	<hr in:fly="{{ ...animation, delay: (delay += 100) }}" />
 
-	<h1 in:fly="{{ ...animation, delay: delay += 100 }}">
+	<h1 in:fly="{{ ...animation, delay: (delay += 100) }}">
 		<a href="#reflectie" name="reflectie">.</a>
 		Reflectie
 	</h1>
 
-	<p in:fly="{{ ...animation, delay: delay += 50 }}">
-		Lorem ipsum
-	</p>
+	<p in:fly="{{ ...animation, delay: (delay += 50) }}">Lorem ipsum</p>
 </main>
 
 <style>
