@@ -1,6 +1,6 @@
 <script>
 	import { Router, Route } from "svelte-routing";
-	import { scrollY, name, semester, fullName, products } from "./utils/stores";
+	import { scrollY, name, semester, firstName, lastName, fullName, products } from "./utils/stores";
 
 	import PageWrapper from "./components/PageWrapper.svelte";
 	import Page from "./components/Page.svelte";
@@ -13,6 +13,16 @@
 
 	export let url = "";
 	export let basepath = process.env.isProd ? "S6" : "";
+
+	fetch("https://portfolio.maxaltena.com/S6/data.json").then(res => res.json().then(data => {
+		$name = data.name;
+		$semester = data.semester;
+		$firstName = data.firstName;
+		$lastName = data.lastName;
+		$fullName = `${data.firstName} ${data.lastName}`;
+		$products = data.products;
+
+	}))
 
 	$: document.title = `${$name} ${$semester} – ${$fullName}`;
 </script>

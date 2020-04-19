@@ -1,4 +1,8 @@
 {
+	"name": "Portfolio",
+	"semester": "S6",
+	"firstName": "Max",
+	"lastName": "Altena",
 	"products": [
 		{ "type": "leeswijzer", "includeInShowcase": false, "emoji": "", "title": "Leeswijzer", "link": "leeswijzer" },
 		{
