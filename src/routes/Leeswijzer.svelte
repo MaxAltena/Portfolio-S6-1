@@ -10,10 +10,10 @@
 </script>
 
 <p>
-	Toch liever de {$docCS === 'dark' ? 'lichte' : 'donkere'} versie van de leeswijzer zien?
+	Liever de {$docCS === 'dark' ? 'lichte' : 'donkere'} versie van de leeswijzer zien?
 	<span role="presentation" on:click="{changedocCS}">
 		Ja, doe maar de {$docCS === 'dark' ? 'lichte' : 'donkere'} versie.
-	</span> Of helemaal geen zin om het hier te zien? Helemaal geen zin om het hier te zien?
+	</span> Of helemaal geen zin om het hier te zien?
 	<a href="https://drive.google.com/file/d/{id}/view" target="_blank">Open de leeswijzer een nieuwe tab.</a>
 </p>
 
@@ -46,7 +46,6 @@
 	span,
 	a {
 		cursor: pointer;
-		margin-right: 15px;
 		color: var(--on-primary);
 		transition: color calc(var(--transition-speed) / 2) var(--transition-timing);
 		text-decoration: none;
