@@ -2,13 +2,16 @@
 	import { fly } from "svelte/transition";
 	import { products } from "../utils/stores";
 	import Product from "./Product.svelte";
+
+	export let delay;
+	export let animation;
 </script>
 
-<div class="showcase" in:fly="{{ y: 40, duration: 400, delay: 150 }}" role="presentation">
+<div class="showcase" in:fly="{{ ...animation, delay: delay += 500 }}" role="presentation">
 	{#each $products as product, i}
 		{#if product.includeInShowcase}
 			<div>
-				<Product {product} {i} />
+				<Product {animation} {delay} {product} {i} />
 			</div>
 		{/if}
 	{/each}
@@ -16,6 +19,7 @@
 
 <style>
 	.showcase {
+		margin: 1rem 0;
 		width: 100%;
 		padding: 0 5%;
 		height: auto;

@@ -2,11 +2,13 @@
 	import { link } from "svelte-routing";
 	import { fade } from "svelte/transition";
 
+	export let animation;
+	export let delay;
 	export let product;
 	export let i;
 </script>
 
-<a use:link in:fade="{{ duration: 400, delay: 150 + i * 100 }}" href="{product.link}/">
+<a use:link in:fade="{{ duration: animation.duration, delay: delay += i * 100 }}" href="{product.link}/">
 	{product.emoji || '▶'} {product.title}
 </a>
 

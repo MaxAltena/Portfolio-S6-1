@@ -43,14 +43,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: color var(--transition-speed) var(--transition-timing),
-			box-shadow var(--transition-speed) var(--transition-timing);
+		transition: color var(--transition-speed) var(--transition-timing);
 		z-index: 10;
 		box-shadow: none;
-	}
-
-	header.scrolled {
-		box-shadow: var(--header-box-shadow);
 	}
 
 	.before {
@@ -76,12 +71,15 @@
 		right: 0;
 		background: var(--primary);
 		transition: background var(--transition-speed) var(--transition-timing),
-			height var(--transition-speed) var(--transition-timing);
+			height var(--transition-speed) var(--transition-timing),
+			box-shadow var(--transition-speed) var(--transition-timing);
 		overflow: hidden;
+		box-shadow: none;
 	}
 
 	.scrolled .after {
 		height: 70px;
+		box-shadow: var(--header-box-shadow);
 	}
 
 	div.container {

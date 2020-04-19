@@ -2,6 +2,9 @@
 	import { fly, fade } from "svelte/transition";
 	import ProductShowcase from "../components/ProductShowcase.svelte";
 	import { name, semester, fullName } from "../utils/stores";
+
+	let delay = 0;
+	let animation = { y: 40, duration: 500 };
 </script>
 
 <main class="container" out:fade="{{ duration: 300 }}">
@@ -15,33 +18,37 @@
 		<hr />
 	</div>
 
-	<h2 in:fly="{{ y: 40, duration: 400, delay: 0 }}">
+	<h1 in:fly="{{ ...animation, delay: delay }}">
 		<a href="#opdracht" name="opdracht">.</a>
 		Opdracht
-	</h2>
+	</h1>
 
-	<p in:fly="{{ y: 40, duration: 400, delay: 50 }}">Lorem ipsum over de opdracht</p>
+	<h2 in:fly="{{ ...animation, delay: delay += 100 }}">Opdrachtgever</h2>
 
-	<hr in:fly="{{ y: 40, duration: 400, delay: 75 }}" />
+	<p in:fly="{{ ...animation, delay: delay += 50 }}">Lorem ipsum</p>
 
-	<h2 in:fly="{{ y: 40, duration: 400, delay: 100 }}">
+	<h2 in:fly="{{ ...animation, delay: delay += 100 }}">Opdrachtomschrijving</h2>
+
+	<p in:fly="{{ ...animation, delay: delay += 50 }}">Lorem ipsum</p>
+
+	<hr in:fly="{{ ...animation, delay: delay += 100 }}" />
+
+	<h1 in:fly="{{ ...animation, delay: delay += 100 }}">
 		<a href="#producten" name="producten">.</a>
 		Producten
-	</h2>
+	</h1>
 
-	<ProductShowcase />
+	<ProductShowcase {animation} {delay} />
 
-	<hr in:fly="{{ y: 40, duration: 400, delay: 175 }}" />
+	<hr in:fly="{{ ...animation, delay: delay += 100 }}" />
 
-	<h2 in:fly="{{ y: 40, duration: 400, delay: 200 }}">
+	<h1 in:fly="{{ ...animation, delay: delay += 100 }}">
 		<a href="#reflectie" name="reflectie">.</a>
 		Reflectie
-	</h2>
+	</h1>
 
-	<p in:fly="{{ y: 40, duration: 400, delay: 250 }}">
-		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, obcaecati. Repellendus modi delectus
-		nulla ipsa, tempora sit eligendi voluptate cumque rem magnam repellat a minus iste ex, molestiae veritatis.
-		Placeat.
+	<p in:fly="{{ ...animation, delay: delay += 50 }}">
+		Lorem ipsum
 	</p>
 </main>
 
@@ -64,10 +71,26 @@
 		position: relative;
 	}
 
-	h2 {
-		margin-bottom: 10px;
+	h1 {
+		margin: 0;
 		color: var(--accent);
 		transition: color var(--transition-speed) var(--transition-timing);
+		font-size: 1.5em;
+	}
+
+	h2 {
+		margin: 0;
+		margin-top: 1rem;
+		color: var(--accent);
+		transition: color var(--transition-speed) var(--transition-timing);
+		font-size: 1.25em;
+	}
+
+	h2::before {
+		content: "⤴️";
+		display: inline-block;
+		transform: rotate(90deg);
+		margin-right: 0.25rem;
 	}
 
 	a[name] {
@@ -78,6 +101,8 @@
 	}
 
 	p {
+		margin: 0;
+		margin-top: 0.5rem;
 		color: var(--on-primary);
 		transition: all var(--transition-speed) var(--transition-timing);
 		word-spacing: 1px;
