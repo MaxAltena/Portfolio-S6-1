@@ -9,7 +9,7 @@
 	<div class="container" role="presentation">
 		<div class="top" role="presentation">
 			<div class="header" role="presentation">
-				<a href="home" use:link>🔙</a>
+				<a href="/home" use:link>🔙</a>
 				<h1>{title}</h1>
 				<a href="#top">🔝</a>
 			</div>
