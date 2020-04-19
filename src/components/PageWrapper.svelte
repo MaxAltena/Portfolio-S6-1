@@ -5,20 +5,18 @@
 	export let title;
 </script>
 
-<main in:fly="{{ y: 100, duration: 300, delay: 150 }}" out:fly="{{ delay: 0, duration: 200, y: 50 }}">
-	<div class="container" role="presentation">
-		<div class="top" role="presentation">
-			<div class="header" role="presentation">
-				<a href="../" use:link>🔙</a>
-				<h1>{title}</h1>
-				<a href="#top">🔝</a>
-			</div>
-
-			<hr />
+<main class="container" in:fly="{{ y: 100, duration: 300, delay: 150 }}" out:fly="{{ delay: 0, duration: 200, y: 50 }}">
+	<div class="top" role="presentation">
+		<div class="header" role="presentation">
+			<a href="../" use:link>🔙</a>
+			<h1>{title}</h1>
+			<a href="#top">🔝</a>
 		</div>
 
-		<slot />
+		<hr />
 	</div>
+
+	<slot />
 </main>
 
 <style>
