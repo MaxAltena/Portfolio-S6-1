@@ -35,6 +35,7 @@
 		top: 5vh;
 		background: var(--primary);
 		transition: background var(--transition-speed) var(--transition-timing);
+		z-index: 50;
 	}
 
 	.top::before {

@@ -4,12 +4,8 @@
 	import { scrollY, name, semester, fullName } from "../utils/stores";
 
 	$: title = `${$name} ${$semester}`;
-	$: csCurrent = window.appPreferences.colorScheme.current;
 
-	const changeColorScheme = () => {
-		window.appPreferences.colorScheme.toggle();
-		csCurrent = window.appPreferences.colorScheme.current;
-	};
+	const changeColorScheme = () => window.appPreferences.colorScheme.toggle();
 </script>
 
 <header class:scrolled="{$scrollY !== 0}" out:fade="{{ duration: 300 }}">

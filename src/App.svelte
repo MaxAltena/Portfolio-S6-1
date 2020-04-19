@@ -33,7 +33,6 @@
 					<Leeswijzer />
 				</PageWrapper>
 			{/if}
-
 		</Route>
 	{/each}
 	<Route path="/">
