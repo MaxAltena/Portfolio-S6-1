@@ -29,7 +29,7 @@
 		"eslint:fix": "eslint . --fix",
 		"prettier": "prettier **/*",
 		"prettier:fix": "prettier **/* --write",
-		"start": "sirv public"
+		"start": "sirv public --single"
 	},
 	"husky": {
 		"hooks": {
