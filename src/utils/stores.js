@@ -7,8 +7,6 @@ export const semester = readable("S6");
 export const firstName = readable("Max");
 export const lastName = readable("Altena");
 export const fullName = readable("Max Altena");
-export const products = readable([], async set => {
-	const res = await fetch(`https://portfolio.maxaltena.com/S6/products.json`);
-	// console.log(await res.json());
-	set(await res.json().products);
-});
+export const products = readable([], set =>
+	fetch("https://portfolio.maxaltena.com/S6/products.json").then(res => res.json().then(data => set(data.products)))
+);
