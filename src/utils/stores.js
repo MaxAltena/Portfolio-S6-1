@@ -9,6 +9,6 @@ export const lastName = readable("Altena");
 export const fullName = readable("Max Altena");
 export const products = readable([], async set => {
 	const res = await fetch(`https://portfolio.maxaltena.com/S6/products.json`);
-	console.log(await res.json());
-	set(await res.json());
+	// console.log(await res.json());
+	set(await res.json().products);
 });
