@@ -1,4 +1,5 @@
 <script>
+	import { link } from "svelte-routing";
 	import { fly, fade } from "svelte/transition";
 	import ProductShowcase from "../components/ProductShowcase.svelte";
 	import { name, semester, fullName } from "../utils/stores";
@@ -46,6 +47,8 @@
 		<a href="#producten" name="producten">.</a>
 		Producten
 	</h1>
+
+	<p in:fly="{{ ...animation, delay: (delay += 50) }}">Weten hoe de producten tot stand zijn gekomen? <a href="leeswijzer/" use:link>Bekijk dan even de aanpak in de leeswijzer.</a></p>
 
 	<ProductShowcase {animation} {delay} />
 
