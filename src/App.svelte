@@ -35,6 +35,11 @@
 			{/if}
 		</Route>
 	{/each}
+	<Route path="/home">
+		<TooltipForDarkmode />
+		<Header />
+		<Main />
+	</Route>
 	<Route path="/">
 		<TooltipForDarkmode />
 		<Header />

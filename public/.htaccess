@@ -220,9 +220,9 @@ AddDefaultCharset utf-8
   # send all requests for /api/* to local node server
   # RewriteRule ^api/(.*)$ https://127.0.0.1:3001/$1 [P,L]
 
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_URI} !(.*)/$
-  RewriteRule ^(.*)$ https://portfolio.maxaltena.com/S6/$1/ [R=301,L]
+  RewriteRule ^ https://portfolio.maxaltena.com/S6/ [R=301,L]
 </IfModule>
 
 # Redirect socket.io requests
@@ -563,11 +563,3 @@ FileETag None
 # ------------------------------------------------------------------------------
 # | Project specific configuration                                             |
 # ------------------------------------------------------------------------------
-
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ https://portfolio.maxaltena.com/S6/index.html [L]
-</IfModule>
