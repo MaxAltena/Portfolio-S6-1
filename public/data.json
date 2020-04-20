@@ -30,17 +30,9 @@
 		{
 			"type": "page",
 			"includeInShowcase": true,
-			"emoji": "❓",
+			"emoji": "⁉️",
 			"title": "Kritische vragen",
 			"link": "kritische-vragen",
-			"content": ""
-		},
-		{
-			"type": "page",
-			"includeInShowcase": true,
-			"emoji": "❗",
-			"title": "Kritische antwoorden",
-			"link": "kritische-antwoorden",
 			"content": ""
 		},
 		{
