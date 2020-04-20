@@ -32,6 +32,10 @@
 		.showcase {
 			grid-template-columns: repeat(2, 50%);
 		}
+
+		.showcase > div {
+			margin: 0.5rem 0;
+		}
 	}
 
 	@media only screen and (max-width: 720px) {

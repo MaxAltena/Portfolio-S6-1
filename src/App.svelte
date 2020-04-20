@@ -25,7 +25,7 @@
 		})
 	);
 
-	$: document.title = `${$name} ${$semester} – ${$fullName}`;
+	$: document.title = `${url !== "" ? $products.find(_product => _product.link === url).name : ""}${$name} ${$semester} – ${$fullName}`;
 </script>
 
 <svelte:window bind:scrollY="{$scrollY}" />
