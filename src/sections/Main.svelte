@@ -25,11 +25,7 @@
 	</h1>
 
 	<p in:fly="{{ ...animation, delay: (delay += 50) }}">
-		<a href="http://stichtingikwil.nl/" target="_blank">Stichting Ik Wil</a>
-		wist aan het begin van het project niet zo goed wat voor opdracht er zou kunnen worden gegeven aan verschillende
-		Fontys studenten. Vandaar gingen wij,
-		<a href="http://desigaar.com/" target="_blank">De Sigaar</a>
-		, als ICT & Media Design’ers op zoek naar knelpunten en mogelijke problemen die zich bij de stichting voordeden.
+		<a href="http://stichtingikwil.nl/" target="_blank">Stichting Ik Wil</a> wist aan het begin van het project niet zo goed wat voor opdracht er zou kunnen worden gegeven aan verschillende Fontys studenten. Vandaar gingen wij, <a href="http://desigaar.com/" target="_blank">De Sigaar</a>, als ICT & Media Design’ers op zoek naar knelpunten en mogelijke problemen die zich bij de stichting voordeden.
 	</p>
 
 	<h2 in:fly="{{ ...animation, delay: (delay += 100) }}">Probleemstelling</h2>
@@ -65,9 +61,7 @@
 	</h1>
 
 	<p in:fly="{{ ...animation, delay: (delay += 50) }}">
-		Weten hoe de producten tot stand zijn gekomen? Bekijk dan even de aanpak in
-		<a href="leeswijzer/" use:link>de leeswijzer</a>
-		.
+		Weten hoe de producten tot stand zijn gekomen? Bekijk dan even de aanpak in <a href="leeswijzer/" use:link>de leeswijzer</a>.
 	</p>
 
 	<ProductShowcase {animation} {delay} />
@@ -79,28 +73,11 @@
 		Reflectie
 	</h1>
 
-	<p in:fly="{{ ...animation, delay: (delay += 50) }}">
-		Terugkijkend op het project zijn er aantal verbeterpunten te vinden voor mijzelf. Startend bijvoorbeeld met de
-		communicatie tussen mij en groepsgenoten tijdens mijn afwezigheid. Soms communiceerde ik niet goed wanneer ik
-		weer aanwezig zou zijn. Ook de communicatie tijdens het ontwikkelen van het product ging het een en ander niet
-		helemaal goed. Hierbij ging ik in eigen tijd de code van andere mensen verbeteren om zo een beter product op te
-		kunnen leveren. Dit gebeurde soms wel met de persoon erbij, maar ik was hierbij niet altijd even duidelijk. Zo
-		wordt er de volgende keer ook betere afspraken gemaakt over de definition of done en hoe de workflow eruit ziet
-		op GitHub.
-	</p>
+	<p in:fly="{{ ...animation, delay: (delay += 50) }}">Terugkijkend op het project zijn er aantal verbeterpunten te vinden voor mijzelf. Startend bijvoorbeeld met de communicatie tussen mij en groepsgenoten tijdens mijn afwezigheid. Soms communiceerde ik niet goed wanneer ik weer aanwezig zou zijn. Ook de communicatie tijdens het ontwikkelen van het product ging het een en ander niet helemaal goed. Hierbij ging ik in eigen tijd de code van andere mensen verbeteren om zo een beter product op te kunnen leveren. Dit gebeurde soms wel met de persoon erbij, maar ik was hierbij niet altijd even duidelijk. Zo wordt er de volgende keer ook betere afspraken gemaakt over de definition of done en hoe de workflow eruit ziet op GitHub.</p>
 
-	<p in:fly="{{ ...animation, delay: (delay += 50) }}">
-		Het in mijn vrije tijd nog iets doen aan het project moet ik de komende projecten verminderen. Zo heb ik te
-		weinig tijd overgehouden aan het maken van een portfolio voor het halen van het semester. Hiernaast ook het tijd
-		nemen door de week in om sommige projectdagen meer voor mezelf iets aan het portfolio te doen.
-	</p>
+	<p in:fly="{{ ...animation, delay: (delay += 50) }}">Het in mijn vrije tijd nog iets doen aan het project moet ik de komende projecten verminderen. Zo heb ik te weinig tijd overgehouden aan het maken van een portfolio voor het halen van het semester. Hiernaast ook het tijd nemen door de week in om sommige projectdagen meer voor mezelf iets aan het portfolio te doen.</p>
 
-	<p in:fly="{{ ...animation, delay: (delay += 50) }}">
-		Het samenwerken met de stichting vond ik erg fijn. Niet alleen met Stephan maar ook met de deelnemers bij de
-		stichting. Het wat een unieke kans om op locatie te zitten met de doel- en publieksgroep en samen met hen een
-		product te ontwikkelen. Helaas was het aan het einde van het project niet mogelijk om het product te testen om
-		het te valideren door het COVID-19 virus.
-	</p>
+	<p in:fly="{{ ...animation, delay: (delay += 50) }}">Het samenwerken met de stichting vond ik erg fijn. Niet alleen met Stephan maar ook met de deelnemers bij de stichting. Het wat een unieke kans om op locatie te zitten met de doel- en publieksgroep en samen met hen een product te ontwikkelen. Helaas was het aan het einde van het project niet mogelijk om het product te testen om het te valideren door het COVID-19 virus.</p>
 </main>
 
 <style>

@@ -4,7 +4,7 @@
 	const navigateToMax = () => window.open("https://maxaltena.com/", "_blank");
 </script>
 
-<marquee transition:slide on:click="{navigateToMax}">
+<marquee transition:slide on:click={navigateToMax}>
 	Made with 💖 by
 	<a href="https://maxaltena.com/" target="_blank">Max</a>
 </marquee>
