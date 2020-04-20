@@ -21,7 +21,7 @@
 			background var(--transition-speed) var(--transition-timing);
 		padding: 2px 10px;
 		font-size: 15px;
-		width: 200px;
+		width: 175px;
 	}
 
 	a {

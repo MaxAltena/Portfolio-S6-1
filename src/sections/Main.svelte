@@ -85,7 +85,7 @@
 <style>
 	main {
 		padding-top: 100px;
-		padding-bottom: 25px;
+		padding-bottom: 50px;
 		display: flex;
 		flex-direction: column;
 		align-items: baseline;
