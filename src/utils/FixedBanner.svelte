@@ -19,9 +19,9 @@
 		color: var(--on-primary);
 		transition: color var(--transition-speed) var(--transition-timing),
 			background var(--transition-speed) var(--transition-timing);
-		padding: 2px 10px;
+		padding: 2px 0;
 		font-size: 15px;
-		width: 175px;
+		width: 180px;
 	}
 
 	a {
