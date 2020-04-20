@@ -7,7 +7,7 @@
 	export let i;
 </script>
 
-<a use:link in:fade="{{ duration: animation.duration, delay: 750 + i * 100 }}" href="{product.link}/">
+<a use:link in:fade="{{ duration: animation.duration, delay: 375 + i * 100 }}" href="{product.link}/">
 	{product.emoji || '▶'} {product.title}
 </a>
 

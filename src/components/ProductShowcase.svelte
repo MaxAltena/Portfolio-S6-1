@@ -7,7 +7,7 @@
 	export let animation;
 </script>
 
-<div class="showcase" in:fly="{{ ...animation, delay: (delay += 50) }}" role="presentation">
+<div class="showcase" in:fly="{{ ...animation, delay: (delay += 25) }}" role="presentation">
 	{#each $products as product, i}
 		{#if product.includeInShowcase}
 			<div>
