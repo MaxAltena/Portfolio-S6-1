@@ -7,6 +7,22 @@
 		{ "type": "leeswijzer", "includeInShowcase": false, "emoji": "", "title": "Leeswijzer", "link": "leeswijzer" },
 		{
 			"type": "page",
+			"includeInShowcase": false,
+			"emoji": "🕹",
+			"title": "Warzone",
+			"link": "super-secret",
+			"content": "<p>Tijdens dit project zijn we bekend geraakt met een spelletje genaamd 'Warzone'. Hier heeft de groep veel van geleerd.</p><img src='https://i.gyazo.com/7e700f4c8f564b05098b8f6d1f879170.png' style='width: 100%; height: auto;' />"
+		},
+		{
+			"type": "page",
+			"includeInShowcase": false,
+			"emoji": "🕹",
+			"title": "Warzone",
+			"link": "warzone",
+			"content": "<p>Tijdens dit project zijn we bekend geraakt met een spelletje genaamd 'Warzone'. Hier heeft de groep veel van geleerd.</p><img src='https://i.gyazo.com/7e700f4c8f564b05098b8f6d1f879170.png' style='width: 100%; height: auto;' />"
+		},
+		{
+			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "❓",
 			"title": "Kritische vragen",
@@ -71,27 +87,27 @@
 		},
 		{
 			"type": "page",
+			"includeInShowcase": false,
+			"emoji": "",
+			"title": "Ontwerp",
+			"link": "ontwerp",
+			"content": "<p>TBD</p>"
+		},
+		{
+			"type": "page",
+			"includeInShowcase": false,
+			"emoji": "",
+			"title": "Testplan",
+			"link": "testplan",
+			"content": "<p>TBD</p>"
+		},
+		{
+			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "👨🏼‍💻",
 			"title": "Development",
 			"link": "development",
-			"content": "<p>Hier komt vanalles over development en ook een github linkje</p>"
-		},
-		{
-			"type": "page",
-			"includeInShowcase": false,
-			"emoji": "🕹",
-			"title": "Warzone",
-			"link": "super-secret",
-			"content": "<p>Tijdens dit project zijn we bekend geraakt met een spelletje genaamd 'Warzone'. Hier heeft de groep veel van geleerd.</p><img src='https://i.gyazo.com/7e700f4c8f564b05098b8f6d1f879170.png' style='width: 100%; height: auto;' />"
-		},
-		{
-			"type": "page",
-			"includeInShowcase": false,
-			"emoji": "🕹",
-			"title": "Warzone",
-			"link": "warzone",
-			"content": "<p>Tijdens dit project zijn we bekend geraakt met een spelletje genaamd 'Warzone'. Hier heeft de groep veel van geleerd.</p><img src='https://i.gyazo.com/7e700f4c8f564b05098b8f6d1f879170.png' style='width: 100%; height: auto;' />"
+			"content": "<p>TBD</p>"
 		},
 		{
 			"type": "page",
