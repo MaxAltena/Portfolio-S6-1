@@ -91,7 +91,7 @@
 
 	.small-medium-only {
 		display: none;
-		width: 50%;
+		width: 100%;
 	}
 
 	h1,
@@ -123,7 +123,7 @@
 
 	a[name] {
 		position: absolute;
-		top: -50px;
+		top: -100px;
 		opacity: 0;
 		pointer-events: none;
 	}
@@ -165,7 +165,7 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		width: 50%;
+		width: 100%;
 		height: 4px;
 		border-radius: 4px;
 		background: var(--accent);
@@ -176,7 +176,7 @@
 
 	a:hover::after,
 	a:active::after {
-		height: 50%;
+		height: 100%;
 	}
 
 	a:hover,
