@@ -16,16 +16,14 @@
 			"includeInShowcase": false,
 			"emoji": "🕹",
 			"title": "Warzone",
-			"link": "super-secret",
-			"content": ""
+			"link": "super-secret"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": false,
 			"emoji": "🕹",
 			"title": "Warzone",
-			"link": "warzone",
-			"content": "<p>Tijdens dit project zijn we bekend geraakt met een spelletje genaamd 'Warzone'. Hier heeft de groep veel van geleerd.</p><img src='https://i.gyazo.com/7e700f4c8f564b05098b8f6d1f879170.png' style='width: 100%; height: auto;' />"
+			"link": "warzone"
 		},
 		{
 			"type": "page",
@@ -39,8 +37,7 @@
 			"includeInShowcase": true,
 			"emoji": "📄",
 			"title": "Probleemanalyse",
-			"link": "probleemanalyse",
-			"content": ""
+			"link": "probleemanalyse"
 		},
 		{
 			"type": "page",

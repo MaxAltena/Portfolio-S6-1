@@ -22,6 +22,12 @@
 	<h2>Verantwoording</h2>
 	<p>Enkele eigen kritische vragen gemaakt en de uiteindelijke vragen aangescherpt en beter verwoord.</p>
 {:else if product.link === 'probleemanalyse'}
+{:else if product.link === 'probleemanalyse'}
+{:else if product.link === 'probleemanalyse'}
+{:else if product.link === 'probleemanalyse'}
+{:else if product.link === 'probleemanalyse'}
+{:else if product.link === 'probleemanalyse'}
+{:else if product.link === 'probleemanalyse'}
 
 {:else if product.link === 'warzone' || product.link === 'super-secret'}
 	<p>
@@ -44,6 +50,7 @@
 	p {
 		margin: 0;
 		margin-top: 0.5rem;
+		margin-bottom: 1rem;
 		color: var(--on-primary);
 		transition: all var(--transition-speed) var(--transition-timing);
 		word-spacing: 1px;
