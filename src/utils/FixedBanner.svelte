@@ -1,8 +1,10 @@
 <script>
 	import { slide } from "svelte/transition";
+
+	const navigateToMax = () => window.open("https://maxaltena.com/", "_blank");
 </script>
 
-<marquee transition:slide>
+<marquee transition:slide on:click={navigateToMax}>
 	Made with 💖 by
 	<a href="https://maxaltena.com/" target="_blank">Max</a>
 </marquee>
@@ -22,6 +24,7 @@
 		padding: 2px 0;
 		font-size: 15px;
 		width: 180px;
+		cursor: pointer;
 	}
 
 	a {

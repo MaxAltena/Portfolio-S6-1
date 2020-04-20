@@ -24,8 +24,9 @@
 			$products = data.products;
 		})
 	);
+	$: console.log(url !== "" ? $products.find(_product => _product.link === url).name : "")
 
-	$: document.title = `${url !== "" ? $products.find(_product => _product.link === url).name : ""}${$name} ${$semester} – ${$fullName}`;
+	$: document.title = `${$name} ${$semester} – ${$fullName}`;
 </script>
 
 <svelte:window bind:scrollY="{$scrollY}" />
