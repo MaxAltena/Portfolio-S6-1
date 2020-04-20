@@ -28,13 +28,13 @@
 		grid-template-columns: repeat(3, 30%);
 	}
 
-	@media only screen and (max-width: 720px) {
+	@media only screen and (max-width: 1280px) {
 		.showcase {
 			grid-template-columns: repeat(2, 50%);
 		}
 	}
 
-	@media only screen and (max-width: 420px) {
+	@media only screen and (max-width: 720px) {
 		.showcase {
 			grid-template-columns: 100%;
 		}
