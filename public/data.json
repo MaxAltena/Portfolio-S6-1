@@ -63,7 +63,7 @@
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "🔍",
-			"title": "Onderzoek: Doelgroep en publieksgroep",
+			"title": "Doelgroep en publieksgroep",
 			"link": "doelgroep-en-publieksgroep",
 			"content": ""
 		},
@@ -71,7 +71,7 @@
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "👤",
-			"title": "Onderzoek: Expert interview",
+			"title": "Expert interview",
 			"link": "expert-interview",
 			"content": ""
 		},
@@ -79,7 +79,7 @@
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "👥",
-			"title": "Onderzoek: Publieksgroep interviews",
+			"title": "Publieksgroep interviews",
 			"link": "publieksgroep-interviews",
 			"content": ""
 		},

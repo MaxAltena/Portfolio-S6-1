@@ -25,7 +25,7 @@
 	</h1>
 
 	<p in:fly="{{ ...animation, delay: (delay += 50) }}">
-		<a href="http://stichtingikwil.nl/" target="_blank">Stichting Ik Wil</a> wist aan het begin van het project niet zo goed wat voor opdracht er zou kunnen worden gegeven aan verschillende Fontys studenten. Vandaar gingen wij, <a href="http://desigaar.com/" target="_blank">De Sigaar</a>, als ICT & Media Design’ers op zoek naar knelpunten en mogelijke problemen die zich bij de stichting voordeden.
+		<a href="http://stichtingikwil.nl/" target="_blank">Stichting Ik Wil</a> wist aan het begin van het project niet zo goed wat voor opdracht er zou kunnen worden gegeven aan verschillende Fontys studenten. Vandaar gingen wij, <a href="http://desigaar.com/" target="_blank">De Sigaar,</a> als ICT & Media Design’ers op zoek naar knelpunten en mogelijke problemen die zich bij de stichting voordeden.
 	</p>
 
 	<h2 in:fly="{{ ...animation, delay: (delay += 100) }}">Probleemstelling</h2>
@@ -61,7 +61,7 @@
 	</h1>
 
 	<p in:fly="{{ ...animation, delay: (delay += 50) }}">
-		Weten hoe de producten tot stand zijn gekomen? Bekijk dan even de aanpak in <a href="leeswijzer/" use:link>de leeswijzer</a>.
+		Weten hoe de producten tot stand zijn gekomen? Bekijk dan even de aanpak in <a href="leeswijzer/" use:link>de leeswijzer.</a>
 	</p>
 
 	<ProductShowcase {animation} {delay} />

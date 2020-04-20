@@ -11,14 +11,12 @@
 
 <p>
 	Liever de {$docCS === 'dark' ? 'lichtere' : 'donkere'} versie van de leeswijzer zien? Dan is er ook nog een
-	<span role="presentation" on:click="{changedocCS}">{$docCS === 'dark' ? 'lichtere' : 'donkere'} versie</span>
-	.
+	<span role="presentation" on:click="{changedocCS}">{$docCS === 'dark' ? 'lichtere' : 'donkere'} versie.</span>
 </p>
 
 <p>
 	Of helemaal geen zin om het hier te zien? Open de leeswijzer in een
-	<a href="https://drive.google.com/file/d/{id}/view" target="_blank">nieuwe tab</a>
-	.
+	<a href="https://drive.google.com/file/d/{id}/view" target="_blank">nieuwe tab.</a>
 </p>
 
 <iframe
