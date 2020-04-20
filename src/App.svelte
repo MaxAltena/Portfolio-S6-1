@@ -24,7 +24,7 @@
 			$products = data.products;
 		})
 	);
-	$: console.log(url !== "" ? $products.find(_product => _product.link === url).name : "")
+	$: console.log(url !== "" ? $products.find(_product => _product.link === url).name : "");
 
 	$: document.title = `${$name} ${$semester} – ${$fullName}`;
 </script>

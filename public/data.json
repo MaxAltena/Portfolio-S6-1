@@ -4,7 +4,13 @@
 	"firstName": "Max",
 	"lastName": "Altena",
 	"products": [
-		{ "type": "leeswijzer", "includeInShowcase": false, "emoji": "📚", "title": "Leeswijzer", "link": "leeswijzer" },
+		{
+			"type": "leeswijzer",
+			"includeInShowcase": false,
+			"emoji": "📚",
+			"title": "Leeswijzer",
+			"link": "leeswijzer"
+		},
 		{
 			"type": "page",
 			"includeInShowcase": false,
