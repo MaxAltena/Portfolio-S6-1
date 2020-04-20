@@ -9,41 +9,65 @@
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "",
-			"title": "Product 1",
-			"link": "product1",
-			"content": "<p>Hier komt vanalles over product 1</p>"
+			"title": "Kritische vragen",
+			"link": "kritische-vragen",
+			"content": "<p>TBD</p>"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "",
-			"title": "Product 2",
-			"link": "product2",
-			"content": "<p>Hier komt vanalles over product 2</p>"
+			"title": "Kritische antwoorden",
+			"link": "kritische-antwoorden",
+			"content": "<p>TBD</p>"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "",
-			"title": "Product 3",
-			"link": "product3",
-			"content": "<p>Hier komt vanalles over product 3</p>"
+			"title": "Probleemanalyse",
+			"link": "probleemanalyse",
+			"content": "<p>TBD</p>"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "",
-			"title": "Product 4",
-			"link": "product4",
-			"content": "<p>Hier komt vanalles over product 4</p>"
+			"title": "Projectplan",
+			"link": "projectplan",
+			"content": "<p>TBD</p>"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "",
-			"title": "Product 5",
-			"link": "product5",
-			"content": "<p>Hier komt vanalles over <b>product 5</b></p>"
+			"title": "Onderzoek: Doelgroep en publieksgroep",
+			"link": "doelgroep-en-publieksgroep",
+			"content": "<p>TBD</p>"
+		},
+		{
+			"type": "page",
+			"includeInShowcase": true,
+			"emoji": "",
+			"title": "Onderzoek: Expert interview",
+			"link": "expert-interview",
+			"content": "<p>TBD</p>"
+		},
+		{
+			"type": "page",
+			"includeInShowcase": true,
+			"emoji": "",
+			"title": "Onderzoek: Publieksgroep interviews",
+			"link": "publieksgroep-interviews",
+			"content": "<p>TBD</p>"
+		},
+		{
+			"type": "page",
+			"includeInShowcase": true,
+			"emoji": "",
+			"title": "Brainstormsessie",
+			"link": "brainstormsessie",
+			"content": "<p>TBD</p>"
 		},
 		{
 			"type": "page",
