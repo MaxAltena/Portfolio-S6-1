@@ -34,7 +34,7 @@
 		}
 
 		.showcase > div {
-			margin: 0 auto;
+			margin: 0 2rem;
 		}
 	}
 </style>
