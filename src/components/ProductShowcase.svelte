@@ -25,17 +25,7 @@
 		height: auto;
 		display: grid;
 		grid-gap: 10px 5%;
-		grid-template-columns: repeat(3, 30%);
-	}
-
-	@media only screen and (max-width: 1280px) {
-		.showcase {
-			grid-template-columns: repeat(2, 50%);
-		}
-
-		.showcase > div {
-			margin: 0.5rem 0;
-		}
+		grid-template-columns: repeat(2, 50%);
 	}
 
 	@media only screen and (max-width: 720px) {
