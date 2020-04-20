@@ -87,7 +87,7 @@
 		},
 		{
 			"type": "page",
-			"includeInShowcase": false,
+			"includeInShowcase": true,
 			"emoji": "",
 			"title": "Ontwerp",
 			"link": "ontwerp",
@@ -95,7 +95,7 @@
 		},
 		{
 			"type": "page",
-			"includeInShowcase": false,
+			"includeInShowcase": true,
 			"emoji": "",
 			"title": "Testplan",
 			"link": "testplan",
@@ -111,7 +111,15 @@
 		},
 		{
 			"type": "page",
-			"includeInShowcase": false,
+			"includeInShowcase": true,
+			"emoji": "",
+			"title": "Eindproduct",
+			"link": "eindproduct",
+			"content": ""
+		},
+		{
+			"type": "page",
+			"includeInShowcase": true,
 			"emoji": "📢",
 			"title": "Communicatie",
 			"link": "communicatie",

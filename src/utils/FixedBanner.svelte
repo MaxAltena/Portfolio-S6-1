@@ -2,13 +2,13 @@
 	import { slide } from "svelte/transition";
 </script>
 
-<footer transition:slide>
+<marquee transition:slide>
 	Made with 💖 by
 	<a href="https://maxaltena.com/" target="_blank">Max</a>
-</footer>
+</marquee>
 
 <style>
-	footer {
+	marquee {
 		position: fixed;
 		bottom: 0;
 		left: 0;
