@@ -2,7 +2,7 @@
 	export let product;
 </script>
 
-{@html product.content}
+{product.content === "" ? "<p>Huh, product niet gevonden? Probeer het later nog eens!</p>" : @html product.content}
 
 <style>
 

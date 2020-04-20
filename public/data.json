@@ -27,7 +27,7 @@
 			"emoji": "❓",
 			"title": "Kritische vragen",
 			"link": "kritische-vragen",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -35,7 +35,7 @@
 			"emoji": "❗",
 			"title": "Kritische antwoorden",
 			"link": "kritische-antwoorden",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -43,7 +43,7 @@
 			"emoji": "📄",
 			"title": "Probleemanalyse",
 			"link": "probleemanalyse",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -51,7 +51,7 @@
 			"emoji": "📅",
 			"title": "Projectplan",
 			"link": "projectplan",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -59,7 +59,7 @@
 			"emoji": "🔍",
 			"title": "Onderzoek: Doelgroep en publieksgroep",
 			"link": "doelgroep-en-publieksgroep",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -67,7 +67,7 @@
 			"emoji": "👤",
 			"title": "Onderzoek: Expert interview",
 			"link": "expert-interview",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -75,7 +75,7 @@
 			"emoji": "👥",
 			"title": "Onderzoek: Publieksgroep interviews",
 			"link": "publieksgroep-interviews",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -83,7 +83,7 @@
 			"emoji": "🧠",
 			"title": "Brainstormsessie",
 			"link": "brainstormsessie",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -91,7 +91,7 @@
 			"emoji": "",
 			"title": "Ontwerp",
 			"link": "ontwerp",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -99,7 +99,7 @@
 			"emoji": "",
 			"title": "Testplan",
 			"link": "testplan",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -107,7 +107,7 @@
 			"emoji": "👨🏼‍💻",
 			"title": "Development",
 			"link": "development",
-			"content": "<p>TBD</p>"
+			"content": ""
 		},
 		{
 			"type": "page",
@@ -115,7 +115,7 @@
 			"emoji": "📢",
 			"title": "Communicatie",
 			"link": "communicatie",
-			"content": "<p>TBD</p>"
+			"content": ""
 		}
 	]
 }
