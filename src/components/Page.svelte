@@ -279,9 +279,11 @@
 	</p>
 {:else if product.link === 'communicatie'}
 	<p>
-		Tijdens het project heb ik de grote groep studenten (18) en mijn eigen groep (De Sigaar) in contact gehouden met
-		de opdrachtgever (Stichting Ik Wil) en alle andere partijen. Hierbij was aan het einde een verandering, doordat
-		het COVID-19 virus er tussen kwam. Groepsleden vonden de communicatie goed tussen elkaar.
+		Tijdens het verloop van het project was ik de aangewezen persoon om de communicatie tussen de opdrachtgever en de groep studenten te doen. Dit ging erg goed en op een professionele manier.
+
+		Naast het goede verloop van communicatie met opdrachtgever ging de communicatie beter dan verwacht met de groep tijdens het COVID-19 virus. Dit hebben we goed opgelost door middel van afspraken te maken van de verwachtingen van iedereen. Zo waren er afspraken gemaakt om om 10 uur aanwezig te zijn in Discord om de dag door te nemen en aan het werk te gaan.
+
+		Het enige verbeterpunt voor mijn communicatie dit project is het beter communiceren van mijn afwezigheid aan de groep. Ze hebben mij hier niet direct op aangesproken, maar wel enkele keren hun zorgen over geuit.
 	</p>
 {:else if product.link === 'warzone' || product.link === 'super-secret'}
 	<p>
