@@ -79,40 +79,35 @@
 			"includeInShowcase": true,
 			"emoji": "🖌",
 			"title": "Ontwerp",
-			"link": "ontwerp",
-			"content": ""
+			"link": "ontwerp"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "🧪",
 			"title": "Testplan",
-			"link": "testplan",
-			"content": ""
+			"link": "testplan"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "👨🏼‍💻",
 			"title": "Development",
-			"link": "development",
-			"content": ""
+			"link": "development"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "📱",
 			"title": "Eindproduct",
-			"link": "eindproduct",
-			"content": ""
+			"link": "eindproduct"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "📢",
 			"title": "Communicatie",
-			"link": "communicatie",
-			"content": ""
+			"link": "communicatie"
 		}
 	]
 }

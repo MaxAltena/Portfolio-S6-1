@@ -155,25 +155,144 @@
 	<h2>Verantwoording</h2>
 	<p>Gehele document gemaakt en onderzoek gedaan. Diverse mensen gesproken en leren kennen in de huiskamer.</p>
 {:else if product.link === 'brainstormsessie'}
+	<h2>Aanleiding</h2>
+	<p>
+		Na het onderzoeken van diverse deelvragen moest er een oplossing worden bedacht op de problemen die gevonden
+		waren. Dit zou worden gedaan door middel van de IDEO methode Human Centered Design. Mede doordat ik deze methode
+		al eens had gebruikt, ging ik deze brainstormsessie organiseren/hosten. Aan het einde zou er ten minste 1
+		mogelijke oplossing op tafel liggen om aan verder te werken.
+	</p>
+	<h2>Aanpak</h2>
+	<p>
+		Nu dat elk duo klaar was met het onderzoeken van de deelvragen werden deze resultaten bij elkaar gegooid om tot
+		diverse inzichten te komen. Niet alleen inzichten, maar ook diverse bijzonderheden en opmerkingen. Deze werden
+		volgens de IDEO methode Human Centered Design opgeplakt op een bord om later te groeperen. Door van inzichten,
+		bijzonderheden en opmerkingen naar gems en thema's te gaan, konden we ze het allemaal een naam geven. Hierdoor
+		kan er makkelijker dingen bij gezocht worden. Door de gehele tijd met elkaar in gesprek te gaan was iedereen de
+		gehele tijd bij de les. Met de thema's konden we 'Hoe kunnen we' vragen stellen om tot een oplossing te komen.
+		Hierbij konden we van problemen naar oplossingen gaan. Deze oplossingen kunnen zo wil worden als je zelf zou
+		willen, want niks was fout. Na enkele minuten werden de beste ideeën in verschillende categorieën gekozen om te
+		prototypen, zo konden we kleinschalig testen wat de gebruikers wel aantrekkelijk zouden vinden.
+	</p>
+	<h2>Conclusie</h2>
+	<p>
+		Deze methode is vooral fijn om te gebruiken wanneer er geen duidelijk probleem is. De gehele sessie ging erg
+		fijn, creatief bezig geweest en tot een goed resultaat gekomen met de groep. Ik vond het organiseren van deze
+		sessie erg fijn en ik vond, net als mijn groepsleden, dat de sessie succesvol was verlopen. Deze methode van
+		oplossingen bedenken bij problemen vind ik erg zinnig omdat je altijd de gebruiker in gedacht hebt, omdat je ook
+		met hun problemen begint.
+	</p>
+	<h2>Verantwoording</h2>
+	<p>
+		Brainstormsessie georganiseerd voor de groep. Hierbij ook de groep in goede banen geleid om tot een zinvol
+		eindresultaat te komen.
+	</p>
 
-{:else if product.link === 'probleemanalyse'}
+{:else if product.link === 'ontwerp'}
+	<h2>Aanleiding</h2>
+	<p>
+		Na de brainstormsessie waren enkele ideeën gekozen om uitgewerkt te worden tot een prototype die de gebruikers
+		konden testen. Ik ging samen met Mike Hendriks een Dashboard ontwerpen voor op een digibord in de huiskamer van
+		de stichting. Met dit ontwerp konden we een waardevol prototype opleveren om mee te testen bij de gebruikers.
+	</p>
+	<h2>Aanpak</h2>
+	<p>
+		Mike en ik hadden beide een andere visie voor het dashboard. Deze gingen we dus ook eerst indivueel uitwerken op
+		papier en in Adobe Xd. Nadat ik verschillende versies had gemaakt van, een voor mijn gevoel goed dashboard,
+		hebben Mike en ik samengezeten om verschillende zaken te bespreken. Wat moet er in het dashboard en wat is de
+		stijl? Samen zijn we voor veel functionaliteit gegaan in mijn ontwerpen en veel goede ontwerpkeuzes in die van
+		Mike. De mogelijkheden in het dashboard hebben we samen gemaakt en gedocumenteerd om beter op 1 lijn te zitten
+		van wat er allemaal in moet komen. Mike heeft hierna het prototype ontwikkelt om te testen.
+	</p>
+	<h2>Conclusie</h2>
+	<p>
+		Het indivueel ontwerpen was erg waardevol om zo je eigen visie te documenteren. Het ontwerp was nog niet zo
+		visueel aantrekkelijk als die van Mike en daar zal ik de volgende keer ook aan werken. De functionaliteit had ik
+		altijd voorop staan. Dit was erg goed, omdat Mike dit niet altijd had. Samen hebben we een goed prototype
+		opgeleverd dat getest kon worden met de gebruikers.
+	</p>
+	<h2>Verantwoording</h2>
+	<p>Ik heb mijn eigen ontwerp gemaakt met enkele versies en iteraties.</p>
+{:else if product.link === 'testplan'}
+	<h2>Aanleiding</h2>
+	<p>
+		Terwijl Mike bezig was met het maken van het uiteindelijke prototype van het dashboard moest er nog iets worden
+		gemaakt. Het testplan kon niet ontbreken bij het testen met gebruikers. Met een goed testplan kon een
+		gebruikerstest bijna niet meer fout gaan. Deze werdt dan ook gemaakt om het prototype zo volledig mogelijk te
+		testen alsof het een eindproduct was.
+	</p>
+	<h2>Aanpak</h2>
+	<p>
+		Na het ontwerpen, was Mike bezig met het afronden van het prototype. In deze tijd ging ik werken aan het
+		testplan door middel van te kijken naar de requirements die waren opgesteld. Vanuit hier kon een goed testplan
+		worden gemaakt. In het testplan werd beschreven waarom er bepaalde dingen moesten worden getest en hoe.
+	</p>
+	<h2>Conclusie</h2>
+	<p>
+		Het maken van een testplan tijdens het einde van het ontwerpen van een prototype ging erg goed. Samen met Mike,
+		door te communiceren, zaten we veelal op 1 lijn als het ging om welke functionaliteit erin het testplan zou
+		moeten komen. Het testen daarintegen heeft Mike volledig gedaan. Dit heeft hij zonder moeite gedaan, waardoor
+		het testplan een goede was doordat het niet alleen door mij zou kunnen worden uitgevoerd.
+	</p>
+	<h2>Verantwoording</h2>
+	<p>
+		Ik heb het volledige testplan opgesteld. Diverse casussen gemaakt op basis van de requirements lijst die is
+		opgesteld tijdens het ontwerpen.
+	</p>
 
-{:else if product.link === 'probleemanalyse'}
+{:else if product.link === 'development'}
 
-{:else if product.link === 'probleemanalyse'}
+	<h2>Aanleiding</h2>
+	<p>
+		Na het valideren van verschillende prototypes kwam het er toch eindelijk op aan: het realiseren en ontwikkelen
+		van het product.
+	</p>
+	<h2>Aanpak</h2>
+	<p>
+		De groep werd in tweeën gedeelde om zo gemakkelijker een product te ontwikkelen. Er was voor het ontwikkelen
+		zo'n goede 4 weken gepland om zo tot een echte activiteiten app te kunnen komen samen met Dylano Hartman, Noël
+		Herwig en Timo van de Laar. Er is bijvoorbeeld gekozen om met TypeScript, React, Redux, Styled Components en
+		Firebase te gebruiken. Dit was per team anders, omdat beide iets anders wilde gebruiken. Hiernaast hebben we ook
+		een goede git workflow gebruikt waarbij de development branch niet werd gebruikt als werk branch, maar als
+		verzamel branch. Zo waren er allemaal feature branches waarin werkt gewerkt en waar wanneer klaar en gereviewd
+		naar de development branch werdt gepullt. Deze aanpak was 1 van de betere die ik heb gebruikt in mijn
+		studentenleven. Kijk gerust even op
+		<a href="https://github.com/DeSigaar/ikwil-app" target="_blank">GitHub</a>
+		naar alle code die is geschreven, als je daar zin in hebt natuurlijk.
+	</p>
+	<h2>Conclusie</h2>
+	<p>
+		Het ontwikkelen van het eindproduct ging echt goed. Mede doordat iedereen elke dag bereikbaar was waren er geen
+		grote problemen tijdens het ontwikkelen. Samen met de juiste technieken en de git workflow die we hadden opgezet
+		ging alles in een sneltrein. Wel kon het wat beter met mijn communicatie tijdens het project over verschillende
+		technische veranderingen in de code.
+	</p>
+	<h2>Verantwoording</h2>
+	<p>Verschillende componenten gemaakt, als 'lead developer' het project beheerd en in goede banen geleid.</p>
 
-{:else if product.link === 'probleemanalyse'}
-
-{:else if product.link === 'probleemanalyse'}
-
-{:else if product.link === 'probleemanalyse'}
-
+{:else if product.link === 'eindproduct'}
+	<h2>Resultaat</h2>
+	<p>
+		Het resultaat van het project is dit geweldige eindproduct. De Stichting Ik Wil App is de vinden op
+		<a href="https://ikwil-app.web.app/" target="_blank">https://ikwil-app.web.app/</a>
+		.
+	</p>
+{:else if product.link === 'communicatie'}
+	<p>
+		Tijdens het project heb ik de grote groep studenten (18) en mijn eigen groep (De Sigaar) in contact gehouden met
+		de opdrachtgever (Stichting Ik Wil) en alle andere partijen. Hierbij was aan het einde een verandering, doordat
+		het COVID-19 virus er tussen kwam. Groepsleden vonden de communicatie goed tussen elkaar.
+	</p>
 {:else if product.link === 'warzone' || product.link === 'super-secret'}
 	<p>
 		Tijdens dit project zijn we bekend geraakt met een spelletje genaamd 'Warzone'. Hier heeft de groep veel van
 		geleerd.
 	</p>
-	<img src="https://i.gyazo.com/7e700f4c8f564b05098b8f6d1f879170.png" style="width: 100%; height: auto;" />
+	<img
+		src="https://i.gyazo.com/7e700f4c8f564b05098b8f6d1f879170.png"
+		style="width: 100%; height: auto;"
+		alt="Foto van Max die de beste is"
+	/>
 {:else}
 	<p>Huh, product niet gevonden? Probeer het later nog eens!</p>
 {/if}
@@ -194,5 +313,40 @@
 		transition: all var(--transition-speed) var(--transition-timing);
 		word-spacing: 1px;
 		text-align: justify;
+	}
+
+	a {
+		cursor: pointer;
+		color: var(--on-primary);
+		transition: color calc(var(--transition-speed) / 2) var(--transition-timing);
+		text-decoration: none;
+
+		padding: 4px;
+		position: relative;
+	}
+
+	a::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 4px;
+		border-radius: 4px;
+		background: var(--accent);
+		z-index: -1;
+		transition: height calc(var(--transition-speed) / 2) var(--transition-timing),
+			background var(--transition-speed) var(--transition-timing);
+	}
+
+	a:hover::after,
+	a:active::after {
+		height: 100%;
+	}
+
+	a:hover,
+	a:active {
+		color: var(--primary);
 	}
 </style>
