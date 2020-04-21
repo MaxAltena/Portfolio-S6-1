@@ -1,14 +1,11 @@
 <h2>Aanleiding</h2>
 <p>
 
-Om een probleem op te lossen moet er eerst gekeken worden naar wat het probleem. Niet alleen dat er een probleem is, maar welke dit is en waarom. Met deze informatie kan er beter worden gestuurd naar een juiste oplossing.
-
+Na het onderzoeken van diverse deelvragen moest er een oplossing worden bedacht op de problemen die gevonden waren. Dit zou worden gedaan door middel van de IDEO methode Human Centered Design.
 
 </p>
 <h2>Aanpak</h2>
 <p>
-
-Na de kritische vragen en de antwoorden hierop ben ik met mijn eigen verdere aannames een analyse gaan maken van het probleem. Hierbij zijn mogelijke oplossingen buiten beeld gebleven, omdat er in deze fase nog niet naar oplossing maar naar problemen werd gezocht.
 
 
 
@@ -17,12 +14,131 @@ Na de kritische vragen en de antwoorden hierop ben ik met mijn eigen verdere aan
 <p>
 
 
+</p>
+<h2>Verantwoording</h2>
+<p>
+
+
+</p>
+
+----------------------------
+<h2>Aanleiding</h2>
+<p>
+
+
+
+</p>
+<h2>Aanpak</h2>
+<p>
+
+
+
+</p>
+<h2>Conclusie</h2>
+<p>
 
 
 </p>
 <h2>Verantwoording</h2>
 <p>
 
-Ik heb mijn eigen probleemanalyse gemaakt en hier later op geïtereerd met de feedback van Michiel om mijn aanpak iets te verduidelijken.
 
 </p>
+
+----------------------------
+<h2>Aanleiding</h2>
+<p>
+
+
+
+</p>
+<h2>Aanpak</h2>
+<p>
+
+
+
+</p>
+<h2>Conclusie</h2>
+<p>
+
+
+</p>
+<h2>Verantwoording</h2>
+<p>
+
+
+</p>
+
+----------------------------
+<h2>Aanleiding</h2>
+<p>
+
+
+
+</p>
+<h2>Aanpak</h2>
+<p>
+
+
+
+</p>
+<h2>Conclusie</h2>
+<p>
+
+
+</p>
+<h2>Verantwoording</h2>
+<p>
+
+
+</p>
+
+----------------------------
+<h2>Aanleiding</h2>
+<p>
+
+
+
+</p>
+<h2>Aanpak</h2>
+<p>
+
+
+
+</p>
+<h2>Conclusie</h2>
+<p>
+
+
+</p>
+<h2>Verantwoording</h2>
+<p>
+
+
+</p>
+
+----------------------------
+<h2>Aanleiding</h2>
+<p>
+
+
+
+</p>
+<h2>Aanpak</h2>
+<p>
+
+
+
+</p>
+<h2>Conclusie</h2>
+<p>
+
+
+</p>
+<h2>Verantwoording</h2>
+<p>
+
+
+</p>
+
+----------------------------

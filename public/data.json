@@ -44,40 +44,35 @@
 			"includeInShowcase": true,
 			"emoji": "📅",
 			"title": "Projectplan",
-			"link": "projectplan",
-			"content": ""
+			"link": "projectplan"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "🔍",
 			"title": "Doelgroep en publieksgroep",
-			"link": "doelgroep-en-publieksgroep",
-			"content": ""
+			"link": "doelgroep-en-publieksgroep"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "👤",
 			"title": "Expert interview",
-			"link": "expert-interview",
-			"content": ""
+			"link": "expert-interview"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "👥",
 			"title": "Publieksgroep interviews",
-			"link": "publieksgroep-interviews",
-			"content": ""
+			"link": "publieksgroep-interviews"
 		},
 		{
 			"type": "page",
 			"includeInShowcase": true,
 			"emoji": "🧠",
 			"title": "Brainstormsessie",
-			"link": "brainstormsessie",
-			"content": ""
+			"link": "brainstormsessie"
 		},
 		{
 			"type": "page",
