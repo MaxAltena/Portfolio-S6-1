@@ -51,7 +51,7 @@
   ],
   "dependencies": {
     "svelte-routing": "^1.4.2",
-    "snyk": "^1.316.1"
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.1.0",
