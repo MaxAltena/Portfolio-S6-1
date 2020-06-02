@@ -12,9 +12,9 @@
 	import FixedBanner from "./utils/FixedBanner.svelte";
 
 	export let url = "";
-	export let basepath = process.env.isProd ? "S6" : "";
+	export let basepath = process.env.isProd ? "S6/project1" : "";
 
-	fetch("https://portfolio.maxaltena.com/S6/data.json").then(res =>
+	fetch("https://portfolio.maxaltena.com/S6/project1/data.json").then(res =>
 		res.json().then(data => {
 			$name = data.name;
 			$semester = data.semester;

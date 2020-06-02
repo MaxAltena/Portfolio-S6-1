@@ -1,8 +1,8 @@
 {
-  "name": "portfolio-s6",
+  "name": "portfolio-s6-project1",
   "version": "1.0.0",
   "private": true,
-  "description": "Het portfolio van Max Altena voor Semester 6 van de studie ICT & Media Design op de Fontys.",
+  "description": "Het eerste portfolio van Max Altena voor Semester 6 van de studie ICT & Media Design op de Fontys.",
   "keywords": [
     "max",
     "altena",
@@ -11,11 +11,11 @@
     "s6",
     "semester 6"
   ],
-  "homepage": "https://portfolio.maxaltena.com/S6/",
-  "bugs": "https://github.com/MaxAltena/Portfolio-S6/issues",
+  "homepage": "https://portfolio.maxaltena.com/S6/project1/",
+  "bugs": "https://github.com/MaxAltena/Portfolio-S6-project1/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MaxAltena/Portfolio-S6.git"
+    "url": "https://github.com/MaxAltena/Portfolio-S6-project1.git"
   },
   "license": "UNLICENSED",
   "author": "Max Altena <max@maxaltena.com> (https://maxaltena.com/)",
