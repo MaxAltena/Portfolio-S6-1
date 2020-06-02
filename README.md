@@ -9,6 +9,6 @@
 [![Pull requests](https://img.shields.io/github/issues-pr/MaxAltena/Portfolio-S6-project1)](https://github.com/MaxAltena/Portfolio-S6-project1/pulls)
 [![Follow @MaxAltena](https://img.shields.io/github/followers/maxaltena?label=Follow&style=social)](https://github.com/MaxAltena)
 
-> Portfolio for Semester 6 of the study ICT & Media Design at Fontys.
+> First Portfolio for Semester 6 of the study ICT & Media Design at Fontys.
 
 Find it on [https://portfolio.maxaltena.com/S6/project1/](https://portfolio.maxaltena.com/S6/project1/)!
