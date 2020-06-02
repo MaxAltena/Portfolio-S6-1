@@ -1,7 +1,7 @@
 # Portfolio-S6-project1
 
 [![Deploy](https://github.com/MaxAltena/Portfolio-S6-project1/workflows/Deploy/badge.svg)](https://github.com/MaxAltena/Portfolio-S6-project1/actions?query=workflow%3A%22Deploy%22)
-[![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fmaxaltena.com)](https://portfolio.maxaltena.com/S6/)
+[![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fmaxaltena.com)](https://portfolio.maxaltena.com/S6/project1/)
 [![Version](https://img.shields.io/github/package-json/v/MaxAltena/Portfolio-S6-project1)](https://github.com/MaxAltena/Portfolio-S6-project1)
 [![Watchers](https://img.shields.io/github/watchers/MaxAltena/Portfolio-S6-project1)](https://github.com/MaxAltena/Portfolio-S6-project1/watchers)
 [![Stars](https://img.shields.io/github/stars/MaxAltena/Portfolio-S6-project1)](https://github.com/MaxAltena/Portfolio-S6-project1/stargazers)

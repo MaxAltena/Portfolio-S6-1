@@ -72,7 +72,7 @@ Options -MultiViews
 # You can customize what Apache returns to the client in case of an error (see
 # http://httpd.apache.org/docs/current/mod/core.html#errordocument), e.g.:
 
-ErrorDocument 404 https://portfolio.maxaltena.com/S6/
+ErrorDocument 404 https://portfolio.maxaltena.com/S6/project1/
 
 # ##############################################################################
 # # INTERNET EXPLORER                                                          #
@@ -223,7 +223,7 @@ AddDefaultCharset utf-8
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_URI} !(.*)/$
-  RewriteRule ^(.*)$ https://portfolio.maxaltena.com/S6/ [R=301,L]
+  RewriteRule ^(.*)$ https://portfolio.maxaltena.com/S6/project1/ [R=301,L]
 </IfModule>
 
 # Redirect socket.io requests
@@ -565,10 +565,9 @@ FileETag None
 # | Project specific configuration                                             |
 # ------------------------------------------------------------------------------
 
-
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule (.*) ./S6/ [QSA,L]
+  RewriteRule (.*) ./S6/project1/ [QSA,L]
 </IfModule>
